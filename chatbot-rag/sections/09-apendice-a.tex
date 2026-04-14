@@ -2,13 +2,13 @@
 \clearpage
 \phantomsection
 \refstepcounter{section}
-\addcontentsline{toc}{section}{APÊNDICE A -- SÍNTESE DA AVALIAÇÃO AUTOMATIZADA E EXEMPLOS DE INTERAÇÃO}
+\addcontentsline{toc}{section}{APÊNDICE \Alph{section} -- SÍNTESE DA AVALIAÇÃO AUTOMATIZADA}
 \begin{center}
-\textbf{APÊNDICE A -- SÍNTESE DA AVALIAÇÃO AUTOMATIZADA E EXEMPLOS DE INTERAÇÃO}
+\textbf{APÊNDICE \Alph{section} -- SÍNTESE DA AVALIAÇÃO AUTOMATIZADA}
 \end{center}
-\label{sec:apendice-exemplos}
+\label{sec:apendice-avaliacao}
 
-Este apêndice reúne a síntese da última execução automatizada e exemplos completos de interação utilizados para complementar a demonstração empírica apresentada na seção de experimentos, com o objetivo de tornar visíveis, em formato legível, tanto os resultados quantitativos da rodada final quanto exemplos qualitativos de bom desempenho e de limitação observada.
+Este apêndice reúne a síntese da última execução automatizada utilizada para complementar a demonstração empírica apresentada na seção de experimentos, com o objetivo de tornar visíveis, em formato legível, os resultados quantitativos da rodada final. As categorias apresentadas na tabela combinam tipos de consulta inspirados em benchmarks recentes de avaliação de RAG, especialmente o RAGEval \parencite{zhuEtAl2025rageval}, com extensões metodológicas definidas no próprio experimento para capturar riscos típicos do domínio parlamentar.
 
 \subsection{Tabela sintética da última execução automatizada}
 
@@ -106,66 +106,3 @@ Use esta rubric para classificar cada resposta em uma planilha ou revisao manual
 - Falta de citacoes ou citacoes mal distribuídas
 - Nao reconhecer quando faltou informacao no contexto
 \end{verbatim}
-
-\subsection{Caso 1: resposta auditável em consulta temática delimitada}\label{sec:anexo-caso-bom}
-
-\textbf{Pergunta}
-
-Quais são os principais argumentos de Paulo Paim contra a capitalização da Previdência e que exemplos ele usa para sustentar essa posição?
-
-\textbf{Resposta}
-
-\textbf{Principais argumentos de Paulo Paim contra a capitalização da Previdência}
-
-\begin{enumerate}
-  \item \textbf{``Capitalização'' equivale, na prática, a ``poupança individual'', o que fragiliza a proteção previdenciária.}
-
-  Ele afirma que ``regime de capitalização me preocupa muito'' porque ``significa uma poupança individual'', em que ``quem vai cuidar do meu dinheiro é aquele fundo'' e ``se o fundo aplicar mal, o resultado é zero'' em rendimento.
-
-  \item \textbf{Perde-se a lógica solidária, e sobra apenas uma parcela do trabalhador.}
-
-  Ele argumenta que se retiram diversas fontes de financiamento e se deixa ``só 10\% do empregado'', dizendo que ``claro que não vai dar'', pois ``tu tens 100, tira 90''.
-
-  \item \textbf{Com esse modelo, a aposentadoria tende a ser muito baixa e pode não garantir continuidade para familiares.}
-
-  Ele descreve que, na capitalização, ``se um deles fez o depósito e aos 85 anos o cidadão morreu, sabe qual o vencimento que ela fica? Zero!'', em referência à ausência de pensão. Também sustenta que, com contribuição reduzida, o trabalhador terminaria ``com exatamente um quarto, R\$750''.
-
-  \item \textbf{Exemplos internacionais mostram que o sistema gerou problemas.}
-
-  Ele diz que ``o sistema da capitalização já foi adotado no Chile, na Colômbia, no México e no Peru'' e que ``todos eles estão voltando atrás'', citando aposentadorias muito baixas e cobertura restrita. Como exemplo do Chile, menciona inclusive casos de ``suicídio entre os idosos'' e a ``média da aposentadoria no Chile'' como equivalente a ``meio salário mínimo''.
-
-  \item \textbf{Ele usa dados e cenários para ilustrar o impacto sobre renda e o ganho do sistema financeiro.}
-
-  No debate, cita uma estimativa segundo a qual ``a remuneração dos bancos consumiria R\$105.701,43'', o que equivaleria a mais de 62\% do patrimônio do empregado, deixando o trabalhador com menos. E conclui que ``um sistema sem empregador e com instituição financeira faturando um percentual será um fracasso, é condenar o trabalhador à miséria''.
-
-  \item \textbf{Afirma que não há país que tenha aplicado esse modelo ``com recurso só do trabalhador'' e tido êxito.}
-
-  Ele desafia: ``Se me apresentarem um único país que aplicou a tal de capitalização com o recurso só do trabalhador e que deu certo, eu mudo aqui o meu discurso''.
-\end{enumerate}
-
-\textbf{Exemplos usados por Paulo Paim}
-
-\begin{itemize}
-  \item Chile: aposentadorias baixas, menção a suicídio entre idosos e retorno parcial atrás do modelo.
-  \item Chile, Colômbia, México e Peru: países citados como evidência de insucesso ou revisão do sistema.
-  \item Cálculo ilustrativo em reais: estimativa de remuneração bancária consumindo grande parte do patrimônio.
-  \item Cenário de pensão: caso em que o cônjuge remanescente ficaria com ``zero''.
-  \item Desafio empírico: pedido de um único caso internacional bem-sucedido com recurso apenas do trabalhador.
-\end{itemize}
-
-\textbf{Limitações apontadas pela própria resposta}
-
-\begin{itemize}
-  \item O contexto não traz uma lista única e consolidada dos argumentos; eles aparecem distribuídos em vários trechos.
-  \item A conclusão aparece dispersa em passagens distintas, e não em uma formulação final única.
-\end{itemize}
-
-\textbf{Referências retornadas pelo sistema}
-
-\begin{itemize}
-  \item Paulo Paim (PT/RS), 21/05/2019, \url{https://www25.senado.leg.br/web/atividade/pronunciamentos/-/p/texto/453686}
-  \item Paulo Paim (PT/RS), 20/05/2019, \url{https://www25.senado.leg.br/web/atividade/pronunciamentos/-/p/texto/453766}
-  \item Paulo Paim (PT/RS), 08/02/2019, \url{https://www25.senado.leg.br/web/atividade/pronunciamentos/-/p/texto/450736}
-  \item Paulo Paim (PT/RS), 19/02/2019, \url{https://www25.senado.leg.br/web/atividade/pronunciamentos/-/p/texto/450992}
-  \item Paulo Paim (PT/RS), 07/02/2019, \url{https://www25.senado.leg.br/web/atividade/pronunciamentos/-/p/texto/450672}
-\end{itemize}
