@@ -1,0 +1,25 @@
+\section{Experimentos e demonstração}
+
+\subsection{Setup experimental}
+
+O experimento utilizou uma base derivada do dataset \nolinkurl{fabriciosantana/discursos-senado-legislatura-56}, contendo 15.729 registros de entrada, dos quais 15.726 correspondiam a discursos efetivamente escritos e 3 foram descartados por ausência de texto útil. A partir desses registros, foram gerados 23.806 chunks, organizados em 120 arquivos Markdown de ingestão. Esses números foram registrados em \nolinkurl{knowledge_openwebui/build_metadata.json}, permitindo rastreabilidade quantitativa da base construída.
+
+Na etapa de preparação da base, adotaram-se como parâmetros principais \texttt{max\_words = 850}, \texttt{overlap\_words = 150} e \texttt{chunks\_per\_file = 200}, buscando equilibrar granularidade e preservação de contexto. Já na configuração operacional validada no Open WebUI, foram definidos \textit{Chunk Size} = 6000, \textit{Chunk Overlap} = 500 e \textit{Chunk Min Size Target} = 2000, com o \textit{Markdown Header Text Splitter} habilitado, uso do modelo de embedding \texttt{text-embedding-3-small} e lote de embeddings de tamanho 32.
+
+O prompt de RAG foi evoluído iterativamente para atender a requisitos centrais do problema institucional: privilegiar o uso prioritário do contexto recuperado, proibir explicitamente a invenção de fatos, exigir declaração de insuficiência quando a informação solicitada não estivesse presente no contexto e incentivar a distribuição de citações ao longo da resposta, complementada, quando pertinente, por uma seção final de referências. Tal configuração alinha-se à literatura que enfatiza explicabilidade, auditabilidade e governança em sistemas RAG (DEENE, 2025; SAID, 2025).
+
+Para a avaliação, o script \texttt{run\_rag\_eval.py} realizou consultas automatizadas à \textit{knowledge base} do Open WebUI via API, gerando saídas em \texttt{.jsonl}, \texttt{.md} e \texttt{.csv}. Esse arranjo permitiu persistência estruturada, revisão qualitativa e comparação manual entre execuções, aproximando o ambiente experimental de práticas de observabilidade e versionamento recomendadas para sistemas RAG em produção.
+
+\subsection{Resultados alcançados}
+
+Os resultados obtidos mostraram-se satisfatórios para uma prova de conceito funcional de chatbot legislativo com RAG. A importação dos 120 lotes foi concluída com sucesso, e o sistema passou a responder perguntas factuais e temáticas sobre discursos da 56\textordfeminine{} Legislatura com qualidade inicial considerada adequada. Observou-se que perguntas específicas, delimitadas e mais atômicas apresentaram desempenho superior em comparação com perguntas muito abertas, multifocais ou excessivamente interpretativas.
+
+A avaliação empírica também indicou que perguntas voltadas a dados objetivos ou argumentos centrais de um senador tendem a produzir respostas mais precisas, enquanto questões transversais, comparativas ou amplas elevam o risco de sínteses genéricas ou de combinação excessiva de contextos distintos. Esses achados reforçam a compreensão de que o desempenho de um sistema RAG emerge da interação entre diferentes componentes do pipeline, em especial segmentação, recuperação, seleção contextual, formulação da consulta e desenho do prompt (GAO et al., 2023; SINGH, 2025; SAID, 2025).
+
+Verificou-se, ainda, que a inclusão de referências documentais ao final da resposta é viável por meio de instruções adequadas no prompt, o que representa ganho relevante em termos de auditabilidade. Em síntese, os resultados indicam que a solução cumpre adequadamente a função de prova de conceito, ao demonstrar viabilidade técnica, coerência arquitetural e utilidade inicial para consultas sobre o acervo discursivo analisado.
+
+\subsection{Impacto na administração pública}
+
+O impacto potencial do chatbot legislativo com RAG na administração pública pode ser analisado em pelo menos quatro dimensões. Em primeiro lugar, há impacto sobre a transparência, na medida em que as respostas passam a ser ancoradas em discursos públicos e citáveis, facilitando a verificação por terceiros. Em segundo lugar, há ganho de eficiência, uma vez que o sistema reduz o tempo necessário para localizar informações relevantes em grandes acervos documentais. Em terceiro lugar, a solução fortalece a memória institucional, ao facilitar a recuperação de posicionamentos anteriores, temas recorrentes e evidências documentais. Por fim, observa-se potencial de apoio à decisão, na medida em que gabinetes e equipes técnicas passam a dispor de camada adicional de mediação informacional para explorar o acervo legislativo de forma mais estruturada (MARTELLOTE VIOLA et al., 2025; DEENE, 2025).
+
+Por operar sobre fontes controladas e permitir referência explícita aos discursos da 56\textordfeminine{} Legislatura, a solução mostra-se mais compatível com exigências de \textit{accountability} do que o uso isolado de um chatbot generalista. Essa característica assume especial relevância em contextos públicos, nos quais a confiabilidade da informação não pode ser dissociada da governança das fontes e da possibilidade de auditoria posterior.

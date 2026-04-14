@@ -1,0 +1,21 @@
+\section{Conclusão e trabalhos futuros}
+
+\subsection{Síntese das contribuições}
+
+O trabalho desenvolveu uma solução funcional de chatbot legislativo com RAG voltada ao acervo de discursos da 56\textordfeminine{} Legislatura do Senado Federal. A solução compreende um pipeline de preparação documental, uma base vetorial, uma interface de consulta e scripts auxiliares de ingestão e avaliação. Demonstrou-se, assim, que é possível estruturar uma base semântica consultável e responder perguntas em linguagem natural com apoio em evidências recuperadas, aproximando o uso de LLMs das exigências de atualidade, explicabilidade e rastreabilidade apontadas pela literatura (GAO et al., 2023).
+
+\subsection{Discussão dos resultados frente aos objetivos}
+
+À luz dos objetivos propostos, os resultados podem ser considerados positivos. A solução atendeu aos requisitos mínimos de indexação da base de discursos da 56\textordfeminine{} Legislatura, recuperação de trechos relevantes, geração de respostas fundamentadas e automação básica da avaliação. Mais do que isso, a experiência evidenciou que a qualidade de um sistema RAG institucional depende de disciplina metodológica e de decisões arquiteturais consistentes. Estratégias de chunking, desenho do prompt, governança de metadados e avaliação iterativa influenciam diretamente o comportamento do chatbot.
+
+Tal constatação confirma a literatura recente, segundo a qual RAG não deve ser entendido apenas como a conexão entre um LLM e um banco vetorial, mas como sistema sociotécnico que exige observabilidade, versionamento e critérios explícitos de sucesso, especialmente quando utilizado em funções públicas sensíveis (SAID, 2025). Nesse sentido, a principal contribuição do trabalho não reside apenas na implementação do protótipo, mas também na explicitação das escolhas técnicas, limitações práticas e requisitos de governança envolvidos em sua construção.
+
+\subsection{Limitações}
+
+Entre as limitações atuais da solução, destacam-se a avaliação ainda predominantemente qualitativa e manual; a ausência, nesta etapa, de filtros mais sofisticados por autor, período ou tipo de discurso diretamente integrados ao fluxo de geração; a possibilidade de respostas excessivamente amplas em consultas abertas; e a dependência de serviços externos para embeddings e parte da geração. Tais limitações dialogam com alertas da literatura acerca de riscos operacionais, vieses de dados e necessidade de monitoramento contínuo em sistemas RAG (GAO et al., 2023; SAID, 2025).
+
+\subsection{Trabalhos futuros}
+
+Como trabalhos futuros, recomenda-se ampliar a avaliação automática por meio de frameworks especializados, como RAGAS, ou de abordagens baseadas em ``juiz LLM'', de modo a complementar a avaliação humana com métricas sistemáticas. Sugere-se, também, incorporar filtros estruturados por metadado na etapa de recuperação, experimentar reranqueadores mais robustos, testar diferentes estratégias de chunking por tipo documental e implementar pós-processamento determinístico para a seção de referências.
+
+Além disso, a solução pode ser expandida para outros tipos de documentos legislativos, como pareceres, projetos de lei, notas técnicas e documentos administrativos relacionados ao processo legislativo. Em perspectiva mais avançada, um desdobramento possível consiste na evolução do sistema para cenários de geração assistida de minutas, relatórios ou discursos, desde que preservados mecanismos de rastreabilidade, supervisão humana obrigatória e controles institucionais adequados. Dessa forma, o presente trabalho abre caminho para agenda mais ampla de pesquisa e desenvolvimento sobre inteligência artificial generativa auditável no contexto do Parlamento brasileiro.
