@@ -12,11 +12,22 @@ Para a avaliação, o script \texttt{run\_rag\_eval.py} realizou consultas autom
 
 \subsection{Resultados alcançados}
 
-Os resultados obtidos mostraram-se satisfatórios para uma prova de conceito funcional de chatbot legislativo com RAG. A importação dos 120 lotes foi concluída com sucesso, e o sistema passou a responder perguntas factuais e temáticas sobre discursos da 56\textordfeminine{} Legislatura com qualidade inicial considerada adequada. Observou-se que perguntas específicas, delimitadas e mais atômicas apresentaram desempenho superior em comparação com perguntas muito abertas, multifocais ou excessivamente interpretativas.
+A avaliação foi conduzida em duas frentes complementares: (i) verificação operacional da base e do pipeline de ingestão e (ii) execução de consultas automatizadas com persistência de artefatos de análise. Na frente operacional, a ingestão dos 120 arquivos foi concluída sem falhas e manteve coerência com os totais registrados em metadados (15.726 discursos úteis e 23.806 chunks), o que confirma a integridade mínima da base para uso em recuperação semântica.
 
-A avaliação empírica também indicou que perguntas voltadas a dados objetivos ou argumentos centrais de um senador tendem a produzir respostas mais precisas, enquanto questões transversais, comparativas ou amplas elevam o risco de sínteses genéricas ou de combinação excessiva de contextos distintos. Esses achados reforçam a compreensão de que o desempenho de um sistema RAG emerge da interação entre diferentes componentes do pipeline, em especial segmentação, recuperação, seleção contextual, formulação da consulta e desenho do prompt \parencite{gao2023ragSurvey,singh2025chunkingTypes,said2025ragPractice}.
+Na frente de consultas, o script \texttt{run\_rag\_eval.py} gerou saídas em \texttt{.jsonl}, \texttt{.md} e \texttt{.csv}, permitindo auditar cada interação (pergunta, resposta e referências retornadas) e comparar execuções com o mesmo conjunto de dados. Esse desenho experimental tornou possível observar padrões recorrentes em vez de depender apenas de impressão subjetiva.
 
-Verificou-se, ainda, que a inclusão de referências documentais ao final da resposta é viável por meio de instruções adequadas no prompt, o que representa ganho relevante em termos de auditabilidade. Em síntese, os resultados indicam que a solução cumpre adequadamente a função de prova de conceito, ao demonstrar viabilidade técnica, coerência arquitetural e utilidade inicial para consultas sobre o acervo discursivo analisado.
+Os achados qualitativos foram consistentes ao longo das execuções analisadas:
+\begin{itemize}
+  \item \textbf{Consultas factuais e delimitadas} apresentaram maior precisão e melhor aderência ao contexto recuperado.
+  \item \textbf{Consultas temáticas moderadamente abertas} produziram respostas úteis, porém com maior variação de completude conforme a formulação da pergunta.
+  \item \textbf{Consultas amplas, comparativas ou multifocais} aumentaram a incidência de sínteses genéricas, com maior necessidade de refinamento iterativo da consulta.
+\end{itemize}
+
+Esse comportamento é compatível com a literatura: em RAG, o desempenho final depende da interação entre segmentação, estratégia de recuperação, montagem de contexto e redação do prompt, não apenas do modelo gerador isoladamente \parencite{gao2023ragSurvey,singh2025chunkingTypes,said2025ragPractice}.
+
+Também se observou viabilidade prática de respostas com referências explícitas aos trechos recuperados, aspecto central para auditabilidade no domínio público. Quando o contexto disponível era insuficiente, o prompt instruiu o sistema a declarar limitação informacional em vez de completar lacunas por inferência livre, reduzindo risco de alucinação factual.
+
+Em síntese, os resultados sustentam a viabilidade técnica da prova de conceito e evidenciam limites de escopo já esperados para consultas muito amplas. Como próximo passo metodológico, recomenda-se consolidar uma matriz de avaliação com conjunto fixo de perguntas, rubrica explícita e comparação sistemática entre tipos de consulta, conforme plano descrito em \texttt{NOTAS\_REVISAO.md}.
 
 \subsection{Impacto na administração pública}
 

@@ -24,7 +24,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Prioridade alta
 
-- `[~]` Fortalecer a secao de resultados em `sections/06-experimentos.tex`.
+- `[x]` Fortalecer a secao de resultados em `sections/06-experimentos.tex`.
   O trecho em torno de `Resultados alcancados` ainda usa formulacoes avaliativas vagas, como "qualidade inicial considerada adequada" e "resultados satisfatorios", sem criterios observaveis suficientes.
 
 - `[ ]` Transformar a avaliacao em evidencia explicita.
@@ -106,7 +106,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   E uma das secoes mais fortes do artigo. O pipeline esta claro, concreto e bem conectado com os objetivos.
 
 - `[~]` Experimentos e demonstracao:
-  E a secao que mais precisa evoluir para fortalecer a evidencia cientifica do trabalho.
+  Secao de resultados reescrita com achados observaveis; pendente consolidar matriz formal de avaliacao (10--20 perguntas) e exemplos completos de interacao.
 
 - `[ ]` Conclusao:
   Coerente com o que foi demonstrado e sem extrapolacoes excessivas.
@@ -126,7 +126,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Proxima acao recomendada
 
-- `[~]` Reescrever `Resultados alcancados` em `sections/06-experimentos.tex` para:
+- `[x]` Reescrever `Resultados alcancados` em `sections/06-experimentos.tex` para:
   - substituir juizos vagos por achados observaveis;
   - aproximar o texto dos criterios de sucesso definidos;
   - preparar terreno para futura inclusao de tabela de avaliacao e exemplos concretos.
