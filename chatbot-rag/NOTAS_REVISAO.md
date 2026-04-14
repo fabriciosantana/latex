@@ -25,7 +25,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Prioridade alta
 
 - `[~]` Fortalecer a secao de resultados em `sections/06-experimentos.tex`.
-  O trecho em torno de `Resultados alcancados` ainda usa formulacoes avaliativas vagas, como "qualidade inicial considerada adequada" e "resultados satisfatorios", sem criterios observaveis suficientes.
+  A secao ja passou a incorporar evidencias observaveis de integridade da base, avaliacao manual e rodadas automatizadas com rubrica; ainda faltam uma matriz enxuta no proprio manuscrito e exemplos completos de interacao para fechar a demonstracao empirica.
 
 - `[ ]` Transformar a avaliacao em evidencia explicita.
   Inserir uma tabela com 10 a 20 perguntas reais de teste, separadas por tipo, por exemplo:
@@ -106,7 +106,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   E uma das secoes mais fortes do artigo. O pipeline esta claro, concreto e bem conectado com os objetivos.
 
 - `[~]` Experimentos e demonstracao:
-  E a secao que mais precisa evoluir para fortalecer a evidencia cientifica do trabalho.
+  A secao foi reforcada com resultados manuais e automatizados datados, mas ainda vale incluir uma matriz resumida de perguntas e 2 ou 3 exemplos completos para tornar a evidencia mais imediata para a banca.
 
 - `[ ]` Conclusao:
   Coerente com o que foi demonstrado e sem extrapolacoes excessivas.
