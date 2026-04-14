@@ -45,5 +45,4 @@
   },
   "forwardPorts": [],
   "postCreateCommand": "bash .devcontainer/post-create.sh",
-  "remoteUser": "codespace"
 }
