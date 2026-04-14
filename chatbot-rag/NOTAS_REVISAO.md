@@ -25,31 +25,35 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Prioridade alta
 
 - `[~]` Fortalecer a secao de resultados em `sections/06-experimentos.tex`.
-  A secao ja passou a incorporar evidencias observaveis de integridade da base, avaliacao manual e rodadas automatizadas com rubrica; ainda faltam uma matriz enxuta no proprio manuscrito e exemplos completos de interacao para fechar a demonstracao empirica.
+  A secao ja passou a incorporar evidencias observaveis de integridade da base, avaliacao manual e rodada automatizada com rubrica, alem de remissoes explicitas para os apendices metodologicos. Ainda faltam uma matriz enxuta no proprio manuscrito, um segundo caso qualitativo com limitacao ou falha controlada e fechamento mais preciso da configuracao final de recuperacao.
 
-- `[ ]` Transformar a avaliacao em evidencia explicita.
-  Inserir uma tabela com 10 a 20 perguntas reais de teste, separadas por tipo, por exemplo:
+- `[x]` Transformar a avaliacao em evidencia explicita.
+  Foi inserida uma tabela com 20 perguntas reais de teste no `Apêndice A`, separadas por tipo, incluindo exemplos como:
   - factual
-  - tematica
+  - proposta
   - comparativa
   - ampla ou multifocal
+  - categorias de controle, desambiguacao, multi-hop e checagem de alucinacao
 
-- `[ ]` Para cada pergunta avaliada, registrar pelo menos:
+- `[~]` Para cada pergunta avaliada, registrar pelo menos:
+  Ja estao registrados:
   - pergunta
   - tipo da pergunta
+  - nota total
+  Ainda faltam, no nivel sintetico desejado:
   - qualidade da recuperacao
   - fidelidade da resposta ao contexto
   - presenca correta de referencias
   - observacoes sobre erro ou limite identificado
 
-- `[ ]` Incluir 2 ou 3 exemplos completos de interacao com o sistema.
-  Idealmente:
-  - um caso com bom desempenho
+- `[~]` Incluir 2 ou 3 exemplos completos de interacao com o sistema.
+  Ja foi incluido um caso completo de bom desempenho no `Apêndice B`.
+  Ainda faltam:
   - um caso com resposta parcialmente satisfatoria
   - um caso em que o sistema falha ou responde de forma excessivamente ampla
 
-- `[ ]` Amarrar explicitamente objetivos, criterios de sucesso e resultados.
-  Os criterios definidos no artigo sao bons, mas a secao de resultados ainda nao demonstra item a item como cada criterio foi ou nao atendido.
+- `[~]` Amarrar explicitamente objetivos, criterios de sucesso e resultados.
+  A secao de resultados ja passou a relacionar integridade da base, comportamento por tipo de pergunta e limites observados. Ainda falta uma amarracao mais direta entre criterios de sucesso e evidencia correspondente, idealmente em formato de quadro ou matriz curta no corpo do texto.
 
 - `[ ]` Explicitar com mais precisao a configuracao experimental final.
   Falta deixar totalmente claro:
@@ -106,7 +110,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   E uma das secoes mais fortes do artigo. O pipeline esta claro, concreto e bem conectado com os objetivos.
 
 - `[~]` Experimentos e demonstracao:
-  A secao foi reforcada com resultados manuais e automatizados datados, mas ainda vale incluir uma matriz resumida de perguntas e 2 ou 3 exemplos completos para tornar a evidencia mais imediata para a banca.
+  A secao foi reforcada com resultados manuais e automatizados datados, com tipologia inspirada em benchmarks RAG recentes, tabela completa no `Apêndice A`, exemplo qualitativo no `Apêndice B` e prompt versionado no `Apêndice C`. Ainda vale incluir uma matriz resumida no corpo do texto, um segundo caso qualitativo de limitacao e maior precisao sobre a configuracao final de recuperacao.
 
 - `[ ]` Conclusao:
   Coerente com o que foi demonstrado e sem extrapolacoes excessivas.
@@ -126,7 +130,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Proxima acao recomendada
 
-- `[~]` Reescrever `Resultados alcancados` em `sections/06-experimentos.tex` para:
-  - substituir juizos vagos por achados observaveis;
-  - aproximar o texto dos criterios de sucesso definidos;
-  - preparar terreno para futura inclusao de tabela de avaliacao e exemplos concretos.
+- `[~]` Fechar a demonstracao empirica em `sections/06-experimentos.tex` para:
+  - consolidar uma matriz curta no corpo do texto com amostra representativa das perguntas;
+  - incluir um segundo caso qualitativo com limitacao ou falha controlada;
+  - explicitar a configuracao final de recuperacao e montagem do contexto;
+  - aproximar de forma mais direta criterios de sucesso e resultados observados.
