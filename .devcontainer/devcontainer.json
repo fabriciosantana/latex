@@ -1,0 +1,49 @@
+{
+  "name": "LaTeX Workspace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.associations": {
+          "*.tex": "latex"
+        },
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "latex-workshop.latex.clean.enabled": true,
+        "latex-workshop.latex.outDir": "%DIR%/out",
+        "latex-workshop.latex.recipe.default": "lastUsed",
+        "latex-workshop.latex.recipes": [
+          {
+            "name": "latexmk (pdf)",
+            "tools": [
+              "latexmk-pdf"
+            ]
+          }
+        ],
+        "latex-workshop.latex.tools": [
+          {
+            "name": "latexmk-pdf",
+            "command": "latexmk",
+            "args": [
+              "-pdf",
+              "-interaction=nonstopmode",
+              "-synctex=1",
+              "-outdir=%OUTDIR%",
+              "%DOC%"
+            ]
+          }
+        ],
+        "latex-workshop.view.pdf.viewer": "tab"
+      }
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "remoteUser": "codespace"
+}
