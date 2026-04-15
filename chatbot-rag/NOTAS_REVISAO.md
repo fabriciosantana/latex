@@ -9,7 +9,7 @@ Legenda de status:
 
 ## Diagnostico geral
 
-O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A fragilidade central continua sendo a demonstracao empirica: o leitor entende claramente o que foi construido, mas ainda nao recebe evidencia suficiente para medir a qualidade da solucao de forma mais objetiva.
+O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, bateria automatizada com rubrica, discussao mais cautelosa por categoria e documentacao dos prompts envolvidos. As pendencias remanescentes sao de refinamento metodologico e apresentacao, nao mais de ausencia de evidencia.
 
 ## Progresso ja concluido
 
@@ -25,7 +25,10 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Prioridade alta
 
 - `[~]` Fortalecer a secao de resultados em `sections/06-experimentos.tex`.
-  A secao ja passou a incorporar evidencias observaveis de integridade da base, avaliacao manual e rodada automatizada com rubrica, alem de remissoes explicitas para os apendices metodologicos. O texto agora tambem distingue com mais clareza o prompt operacional do Open WebUI e o prompt de geracao usado na bateria automatizada. Ainda faltam uma matriz enxuta no proprio manuscrito e, se houver nova rodada experimental, o alinhamento do mesmo prompt entre uso manual/interativo e avaliacao automatizada.
+  A secao ja incorpora evidencias observaveis de integridade da base, avaliacao manual e rodada automatizada com rubrica, alem de remissoes explicitas para os apendices metodologicos. O texto tambem passou a distinguir com clareza o prompt operacional do Open WebUI e o prompt de geracao usado na bateria automatizada. O que ainda pode ser melhorado e:
+  - incluir uma matriz enxuta no proprio manuscrito;
+  - alinhar o mesmo prompt entre uso manual/interativo e avaliacao automatizada;
+  - decidir se vale rerodar a bateria com esse alinhamento para maximizar comparabilidade.
 
 - `[x]` Transformar a avaliacao em evidencia explicita.
   Foi inserida uma tabela com 20 perguntas reais de teste no `Apêndice A`, separadas por tipo, incluindo exemplos como:
@@ -45,6 +48,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   - fidelidade da resposta ao contexto
   - presenca correta de referencias
   - observacoes sobre erro ou limite identificado
+  Observacao:
+  - parte desses aspectos ja aparece indiretamente nas `review_notes` do CSV bruto, mas ainda nao foi sintetizada no manuscrito
 
 - `[~]` Incluir 2 ou 3 exemplos completos de interacao com o sistema.
   O `Apêndice B` ja reune tres estudos de caso exemplificativos:
@@ -54,7 +59,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   A pendencia residual nao e mais quantidade de exemplos, mas decidir se vale incluir, no corpo do texto, uma matriz curta que sintetize esses perfis.
 
 - `[~]` Amarrar explicitamente objetivos, criterios de sucesso e resultados.
-  A secao de resultados ja passou a relacionar integridade da base, comportamento por tipo de pergunta e limites observados. Ainda falta uma amarracao mais direta entre criterios de sucesso e evidencia correspondente, idealmente em formato de quadro ou matriz curta no corpo do texto.
+  A secao de resultados ja passou a relacionar integridade da base, comportamento por familia de perguntas e limites observados. Ainda falta uma amarracao mais direta entre criterios de sucesso e evidencia correspondente, idealmente em formato de quadro ou matriz curta no corpo do texto.
 
 - `[~]` Explicitar com mais precisao a configuracao experimental final.
   O manuscrito ja deixa claro:
@@ -138,3 +143,13 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   - manter alinhados os artefatos metodologicos de prompt entre uso manual/interativo e avaliacao automatizada;
   - decidir se vale rerodar a bateria com prompt unificado;
   - aproximar de forma mais direta criterios de sucesso e resultados observados.
+
+## Retomada sugerida
+
+Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
+
+1. decidir se havera ou nao nova rodada experimental com prompt unificado;
+2. se houver, alinhar o mesmo prompt entre uso manual/interativo e avaliacao automatizada e rerodar a bateria;
+3. atualizar `sections/06-experimentos.tex` e `sections/11-apendice-c.tex` conforme o artefato final de prompt adotado;
+4. montar uma matriz curta no corpo do texto com 5 a 7 perguntas representativas;
+5. revisar resumo e conclusao para refletir a forma final da demonstracao empirica.
