@@ -25,7 +25,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Prioridade alta
 
 - `[~]` Fortalecer a secao de resultados em `sections/06-experimentos.tex`.
-  A secao ja passou a incorporar evidencias observaveis de integridade da base, avaliacao manual e rodada automatizada com rubrica, alem de remissoes explicitas para os apendices metodologicos. Ainda faltam uma matriz enxuta no proprio manuscrito, um segundo caso qualitativo com limitacao ou falha controlada e fechamento mais preciso da configuracao final de recuperacao.
+  A secao ja passou a incorporar evidencias observaveis de integridade da base, avaliacao manual e rodada automatizada com rubrica, alem de remissoes explicitas para os apendices metodologicos. O texto agora tambem distingue com mais clareza o prompt operacional do Open WebUI e o prompt de geracao usado na bateria automatizada. Ainda faltam uma matriz enxuta no proprio manuscrito e, se houver nova rodada experimental, o alinhamento do mesmo prompt entre uso manual/interativo e avaliacao automatizada.
 
 - `[x]` Transformar a avaliacao em evidencia explicita.
   Foi inserida uma tabela com 20 perguntas reais de teste no `Apêndice A`, separadas por tipo, incluindo exemplos como:
@@ -47,21 +47,24 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   - observacoes sobre erro ou limite identificado
 
 - `[~]` Incluir 2 ou 3 exemplos completos de interacao com o sistema.
-  Ja foi incluido um caso completo de bom desempenho no `Apêndice B`.
-  Ainda faltam:
-  - um caso com resposta parcialmente satisfatoria
-  - um caso em que o sistema falha ou responde de forma excessivamente ampla
+  O `Apêndice B` ja reune tres estudos de caso exemplificativos:
+  - um caso forte
+  - um caso de cautela
+  - um caso de limite
+  A pendencia residual nao e mais quantidade de exemplos, mas decidir se vale incluir, no corpo do texto, uma matriz curta que sintetize esses perfis.
 
 - `[~]` Amarrar explicitamente objetivos, criterios de sucesso e resultados.
   A secao de resultados ja passou a relacionar integridade da base, comportamento por tipo de pergunta e limites observados. Ainda falta uma amarracao mais direta entre criterios de sucesso e evidencia correspondente, idealmente em formato de quadro ou matriz curta no corpo do texto.
 
-- `[ ]` Explicitar com mais precisao a configuracao experimental final.
-  Falta deixar totalmente claro:
-  - qual foi o modelo gerador final usado nas respostas
-  - quais parametros relevantes foram usados na geracao
-  - quantos trechos foram recuperados
-  - como o contexto final foi montado
-  - quais configuracoes foram decisivas para o desempenho observado
+- `[~]` Explicitar com mais precisao a configuracao experimental final.
+  O manuscrito ja deixa claro:
+  - qual foi o modelo registrado nas respostas da API
+  - que a recuperacao e a montagem do contexto ficaram internalizadas no Open WebUI
+  - quantos trechos e quantos arquivos-fonte apareceram por resposta na rodada final
+  - que o juiz pode ser configurado separadamente, embora o mesmo modelo tenha sido reutilizado por simplificacao
+  Ainda falta, como melhoria metodologica futura:
+  - alinhar o mesmo prompt entre uso manual/interativo e avaliacao automatizada
+  - decidir se vale rerodar a bateria com esse alinhamento para maximizar comparabilidade
 
 ## Prioridade media
 
@@ -110,7 +113,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   E uma das secoes mais fortes do artigo. O pipeline esta claro, concreto e bem conectado com os objetivos.
 
 - `[~]` Experimentos e demonstracao:
-  A secao foi reforcada com resultados manuais e automatizados datados, com tipologia inspirada em benchmarks RAG recentes, tabela completa no `Apêndice A`, exemplo qualitativo no `Apêndice B` e prompt versionado no `Apêndice C`. Ainda vale incluir uma matriz resumida no corpo do texto, um segundo caso qualitativo de limitacao e maior precisao sobre a configuracao final de recuperacao.
+  A secao foi reforcada com resultados manuais e automatizados datados, com tipologia inspirada em benchmarks RAG recentes, tabela completa no `Apêndice A`, tres estudos de caso no `Apêndice B` e documentacao dos prompts no `Apêndice C`. Ainda vale incluir uma matriz resumida no corpo do texto e, em rodada futura, alinhar o mesmo prompt entre avaliacao manual/interativa e automatizada.
 
 - `[ ]` Conclusao:
   Coerente com o que foi demonstrado e sem extrapolacoes excessivas.
@@ -132,6 +135,6 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 - `[~]` Fechar a demonstracao empirica em `sections/06-experimentos.tex` para:
   - consolidar uma matriz curta no corpo do texto com amostra representativa das perguntas;
-  - incluir um segundo caso qualitativo com limitacao ou falha controlada;
-  - explicitar a configuracao final de recuperacao e montagem do contexto;
+  - manter alinhados os artefatos metodologicos de prompt entre uso manual/interativo e avaliacao automatizada;
+  - decidir se vale rerodar a bateria com prompt unificado;
   - aproximar de forma mais direta criterios de sucesso e resultados observados.
