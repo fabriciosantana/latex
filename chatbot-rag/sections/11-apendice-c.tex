@@ -9,7 +9,7 @@
 
 Este apêndice registra o prompt configurado no modelo RAG do Open WebUI\footnote{\url{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/prompts/rag_prompt.md}}. Trata-se do prompt utilizado na formulação das respostas geradas pelo sistema. Sua formulação explicita as restrições centrais adotadas no fluxo RAG, sobretudo quanto à fidelidade ao contexto recuperado, controle de escopo, reconhecimento de limites do contexto, separação entre contexto e conhecimento externo, distribuição de citações ao longo da resposta e exigência de uma seção final de referências.
 
-\begin{verbatim}
+\begin{Verbatim}[breaklines=true]
 ### Tarefa
 
 Responda a pergunta do usuário usando prioritariamente o contexto recuperado abaixo.
@@ -72,4 +72,4 @@ Siga esta ordem, quando aplicável:
 <context>
 {{CONTEXT}}
 </context>
-\end{verbatim}
+\end{Verbatim}
