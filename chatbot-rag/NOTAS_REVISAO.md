@@ -30,6 +30,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Incluir discussao curta de ameacas a validade em `sections/06-experimentos.tex`.
 - `[x]` Reforcar a criticidade da fundamentacao teorica sobre RAG, chunking e avaliacao por LLM juiz.
 - `[x]` Realizar curadoria academica das referencias, substituindo citacoes centrais apoiadas em blogs ou textos de pratica profissional por literatura academica, proceedings, surveys e relatorios institucionais fortes.
+- `[x]` Incorporar Textos para Discussao recentes da Consultoria Legislativa do Senado sobre discursos em Plenario como fontes institucionais de dominio, reforcando a relevancia empirica do corpus parlamentar brasileiro.
 
 ## Prioridade alta
 
@@ -130,6 +131,9 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 - `[x]` Reavaliar o peso de fontes nao academicas.
   As citacoes centrais anteriormente apoiadas em blogs, textos corporativos ou materiais de pratica profissional foram substituidas por surveys, artigos de congresso, artigos em periodicos, preprints academicos e relatorios institucionais. A fundamentacao passou a se apoiar especialmente em literatura de RAG, avaliacao automatizada, segmentacao documental, governanca de IA no setor publico e diretrizes institucionais para parlamentos.
+
+- `[x]` Incluir fontes institucionais recentes sobre discursos do Senado.
+  Foram incorporados os Textos para Discussao n. 355 e n. 357, ambos da Consultoria Legislativa do Senado, para fortalecer a contextualizacao do corpus de discursos em plenario e contrastar estudos computacionais descritivos com a contribuicao aplicada deste trabalho em consulta RAG.
 
 ## Proxima acao recomendada
 
