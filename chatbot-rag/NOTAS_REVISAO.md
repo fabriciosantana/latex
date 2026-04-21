@@ -25,6 +25,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Atualizar o `Apêndice A` para sintetizar as tres rodadas principais e apresentar as notas por pergunta em cada rodada.
 - `[x]` Manter no `Apêndice C` apenas o prompt operacional do fluxo RAG configurado no Open WebUI.
 - `[x]` Revisar `sections/01-resumo.tex`, `sections/05-proposta.tex` e `sections/07-conclusao.tex` para alinhar a narrativa geral a demonstracao empirica atual.
+- `[x]` Incluir quadro curto em `sections/06-experimentos.tex` conectando objetivos avaliados, evidencias empiricas e interpretacao dos resultados.
 
 ## Prioridade alta
 
@@ -54,8 +55,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   - um caso de cautela
   - um caso de limite
 
-- `[~]` Amarrar explicitamente objetivos, criterios de sucesso e resultados.
-  A secao de resultados ja relaciona integridade da base, comportamento por familia de perguntas, estabilidade entre rodadas, limites observados e triangulacao manual amostral. A pendencia residual e apenas decidir se vale incluir um quadro curto no corpo do texto conectando objetivos, evidencias e conclusoes.
+- `[x]` Amarrar explicitamente objetivos, criterios de sucesso e resultados.
+  Foi incluido quadro curto no corpo da secao de experimentos conectando objetivos avaliados, evidencias empiricas e interpretacao dos resultados.
 
 - `[x]` Explicitar com mais precisao a configuracao experimental final.
   O manuscrito ja deixa claro:
@@ -133,7 +134,6 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Proxima acao recomendada
 
 - `[~]` Fazer revisao de consistencia final do manuscrito completo para:
-  - decidir se vale incluir um quadro curto de objetivos, evidencias e conclusoes;
   - reduzir eventuais repeticoes de termos como auditabilidade, rastreabilidade e governanca.
   - revisar fluidez academica e consistencia entre introducao, fundamentacao, proposta, experimentos e conclusao.
 
@@ -141,8 +141,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
-1. decidir se um quadro curto de objetivos, evidencias e conclusoes entra no corpo do texto;
-2. fazer uma leitura final de fluidez academica e evitar repeticoes conceituais;
-3. revisar a fundamentacao teorica para tornar a lacuna de pesquisa mais explicita;
-4. avaliar se vale incluir uma figura simples da arquitetura ou do pipeline;
-5. recompilar o PDF e fazer revisao visual final.
+1. fazer uma leitura final de fluidez academica e evitar repeticoes conceituais;
+2. revisar a fundamentacao teorica para tornar a lacuna de pesquisa mais explicita;
+3. avaliar se vale incluir uma figura simples da arquitetura ou do pipeline;
+4. recompilar o PDF e fazer revisao visual final.
