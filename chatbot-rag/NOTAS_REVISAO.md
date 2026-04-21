@@ -29,6 +29,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Explicitar o tipo de contribuicao como prova de conceito reprodutivel, e nao como benchmark definitivo.
 - `[x]` Incluir discussao curta de ameacas a validade em `sections/06-experimentos.tex`.
 - `[x]` Reforcar a criticidade da fundamentacao teorica sobre RAG, chunking e avaliacao por LLM juiz.
+- `[x]` Realizar curadoria academica das referencias, substituindo citacoes centrais apoiadas em blogs ou textos de pratica profissional por literatura academica, proceedings, surveys e relatorios institucionais fortes.
 
 ## Prioridade alta
 
@@ -102,7 +103,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Resumo:
   Revisado para refletir a forma final da demonstracao empirica e os limites observados em consultas numericas, comparativas, multifocais e de controle de escopo.
 
-- `[ ]` Introducao:
+- `[x]` Introducao:
   Boa delimitacao do problema, boa justificativa para uso de RAG e boa conexao com administracao publica.
 
 - `[x]` Fundamentacao teorica:
@@ -127,12 +128,12 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[~]` Padronizar autores institucionais.
   O uso de autores institucionais ja foi organizado no `.bib`, mas ainda vale revisar se a aparencia final no texto esta ideal para o padrao desejado.
 
-- `[ ]` Reavaliar o peso de fontes nao academicas.
-  O artigo pode manter referencias de pratica profissional, mas ficaria mais forte para banca se parte dessas afirmacoes tambem fosse sustentada por artigos, relatorios tecnicos ou documentacao institucional mais robusta.
+- `[x]` Reavaliar o peso de fontes nao academicas.
+  As citacoes centrais anteriormente apoiadas em blogs, textos corporativos ou materiais de pratica profissional foram substituidas por surveys, artigos de congresso, artigos em periodicos, preprints academicos e relatorios institucionais. A fundamentacao passou a se apoiar especialmente em literatura de RAG, avaliacao automatizada, segmentacao documental, governanca de IA no setor publico e diretrizes institucionais para parlamentos.
 
 ## Proxima acao recomendada
 
-- `[~]` Fazer revisao visual final do PDF ja compilado para:
+- `[~]` Fazer revisao visual final do PDF ja compilado, somente apos o fechamento academico do conteudo, para:
   - verificar quebras de pagina, tabelas longas, apendices, notas de rodape e referencias;
   - decidir se a figura simples da arquitetura ou do pipeline deve ser incluida antes da entrega;
   - evitar alteracoes puramente visuais antes do fechamento do conteudo academico.
@@ -143,5 +144,5 @@ Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
 1. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas, notas de rodape, referencias e apendices;
 2. decidir se vale incluir uma figura simples da arquitetura ou do pipeline;
-3. reavaliar rapidamente o peso de fontes nao academicas e a aparencia final dos autores institucionais;
-4. recompilar o PDF e fazer revisao visual final.
+3. revisar rapidamente a aparencia final dos autores institucionais e das novas referencias academicas na bibliografia;
+4. recompilar o PDF e fazer revisao visual final de baixo risco.
