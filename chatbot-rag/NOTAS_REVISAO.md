@@ -31,6 +31,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Reforcar a criticidade da fundamentacao teorica sobre RAG, chunking e avaliacao por LLM juiz.
 - `[x]` Realizar curadoria academica das referencias, substituindo citacoes centrais apoiadas em blogs ou textos de pratica profissional por literatura academica, proceedings, surveys e relatorios institucionais fortes.
 - `[x]` Incorporar Textos para Discussao recentes da Consultoria Legislativa do Senado sobre discursos em Plenario como fontes institucionais de dominio, reforcando a relevancia empirica do corpus parlamentar brasileiro.
+- `[x]` Revisar a coerencia final entre resumo, introducao, objetivos, experimentos e conclusao para manter a contribuicao como prova de conceito reprodutivel, sem sugerir benchmark definitivo ou prontidao operacional ampla.
+- `[x]` Verificar notas de rodape com artefatos experimentais e links externos centrais, confirmando que os enderecos publicos retornam com sucesso.
 
 ## Prioridade alta
 
@@ -91,7 +93,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Prioridade baixa
 
 - `[x]` Enxugar e atualizar o resumo em relacao a ferramentas e avaliacao.
-  O resumo agora explicita a demonstracao empirica com inspecao manual, tres rodadas automatizadas, rubrica, julgamento por LLM e analise manual amostral.
+  O resumo agora explicita a demonstracao empirica com inspecao manual, tres rodadas automatizadas, rubrica, avaliacao por LLM como juiz e analise manual amostral.
 
 - `[x]` Considerar uma secao ou paragrafo curto com ameacas a validade.
   Foi incluida subseção especifica em `sections/06-experimentos.tex`, reconhecendo limitacoes de tamanho e balanceamento da bateria, sensibilidade do LLM Judge, validacao manual amostral e dependencia da configuracao do Open WebUI.
@@ -114,10 +116,10 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   Revisada para corrigir a descricao da arquitetura, alinhar o fluxo de consulta ao prompt operacional do Open WebUI e atualizar a descricao da avaliacao automatizada.
 
 - `[x]` Experimentos e demonstracao:
-  A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, tabela das tres rodadas principais no `Apêndice A`, tres estudos de caso no `Apêndice B`, documentacao do prompt operacional no `Apêndice C`, teste de sensibilidade com juiz alternativo, discussao sobre divergencia entre avaliacao automatica e leitura manual amostral, e subseção de ameaças a validade.
+  A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, tabela das tres rodadas principais no `Apêndice A`, tres estudos de caso no `Apêndice B`, documentacao do prompt operacional no `Apêndice C`, teste de sensibilidade com LLM juiz alternativo, discussao sobre divergencia entre avaliacao automatica e leitura manual amostral, e subseção de ameaças a validade.
 
 - `[x]` Conclusao:
-  Revisada para refletir as tres rodadas recentes, a triangulacao manual, a sensibilidade do juiz automatizado e os trabalhos futuros mais coerentes com o estado atual do experimento.
+  Revisada para refletir as tres rodadas recentes, a triangulacao manual, a sensibilidade do LLM juiz e os trabalhos futuros mais coerentes com o estado atual do experimento.
 
 ## Referencias e padronizacao
 
@@ -126,8 +128,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 - `[x]` Corrigir a data inconsistente da referencia de Khaliq et al.
 
-- `[~]` Padronizar autores institucionais.
-  O uso de autores institucionais ja foi organizado no `.bib`, mas ainda vale revisar se a aparencia final no texto esta ideal para o padrao desejado.
+- `[x]` Padronizar autores institucionais.
+  O uso de autores institucionais foi verificado no `.bbl`: Inter-Parliamentary Union, United Nations e Westminster Foundation for Democracy aparecem como autores institucionais; os Textos para Discussao aparecem com autoria individual e CONLEG/Senado Federal como instituicao; International IDEA aparece como organizacao associada ao texto de Geunis.
 
 - `[x]` Reavaliar o peso de fontes nao academicas.
   As citacoes centrais anteriormente apoiadas em blogs, textos corporativos ou materiais de pratica profissional foram substituidas por surveys, artigos de congresso, artigos em periodicos, preprints academicos e relatorios institucionais. A fundamentacao passou a se apoiar especialmente em literatura de RAG, avaliacao automatizada, segmentacao documental, governanca de IA no setor publico e diretrizes institucionais para parlamentos.

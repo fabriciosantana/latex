@@ -12,7 +12,7 @@ Este apêndice reúne a síntese das três rodadas automatizadas recentes utiliz
 
 \subsection{Síntese das rodadas automatizadas}
 
-A Tabela~\ref{tab:rodadas-avaliacao} apresenta a síntese das três rodadas principais consideradas na análise. Em todas elas, 20 perguntas foram avaliadas com estratégia de \textit{LLM as a Judge} \parencite{liuEtAl2025judgeRag}, mantendo a mesma base de conhecimento, o mesmo conjunto de perguntas e o mesmo modelo nas etapas de geração e julgamento. A nota total de cada item corresponde à soma dos cinco critérios da rubrica, em escala de 0 a 10 \parencite{liuEtAl2023geval}.
+A Tabela~\ref{tab:rodadas-avaliacao} apresenta a síntese das três rodadas principais consideradas na análise. Em todas elas, 20 perguntas foram avaliadas com estratégia de \textit{LLM as a Judge} \parencite{liuEtAl2025judgeRag}, mantendo a mesma base de conhecimento, o mesmo conjunto de perguntas e o mesmo modelo nas etapas de geração e avaliação. A nota total de cada item corresponde à soma dos cinco critérios da rubrica, em escala de 0 a 10 \parencite{liuEtAl2023geval}.
 
 \begingroup
 \footnotesize
@@ -72,7 +72,7 @@ q20 & checagem de alucinação & Entre as perguntas deste conjunto, quais tender
 
 \subsection{Rubrica utilizada na avaliação automatizada}
 
-Para favorecer reprodutibilidade, a seguir registra-se o conteúdo da rubrica aplicada pelo juiz automatizado. Sua formulação em critérios explícitos e escala discreta aproxima o procedimento adotado de abordagens de avaliação por formulário e rubrica descritas na literatura de \textit{LLM-based evaluation} \parencite{liuEtAl2023geval}.
+Para favorecer reprodutibilidade, a seguir registra-se o conteúdo da rubrica aplicada pelo LLM juiz. Sua formulação em critérios explícitos e escala discreta aproxima o procedimento adotado de abordagens de avaliação por formulário e rubrica descritas na literatura de \textit{LLM-based evaluation} \parencite{liuEtAl2023geval}. As faixas de decisão registradas na rubrica têm sentido operacional no escopo do experimento, não devendo ser lidas como certificação de prontidão para uso institucional amplo.
 
 \begin{Verbatim}[breaklines=true]
 # RAG Evaluation Rubric
