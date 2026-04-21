@@ -9,7 +9,7 @@ Legenda de status:
 
 ## Diagnostico geral
 
-O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral e documentacao do prompt operacional do fluxo RAG. As pendencias remanescentes sao de refinamento de apresentacao e consistencia final entre secoes, nao mais de ausencia de evidencia.
+O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral, ameaças a validade e documentacao do prompt operacional do fluxo RAG. As pendencias remanescentes sao de refinamento de apresentacao e consistencia final entre secoes, nao mais de ausencia de evidencia.
 
 ## Progresso ja concluido
 
@@ -26,6 +26,9 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Manter no `Apêndice C` apenas o prompt operacional do fluxo RAG configurado no Open WebUI.
 - `[x]` Revisar `sections/01-resumo.tex`, `sections/05-proposta.tex` e `sections/07-conclusao.tex` para alinhar a narrativa geral a demonstracao empirica atual.
 - `[x]` Incluir quadro curto em `sections/06-experimentos.tex` conectando objetivos avaliados, evidencias empiricas e interpretacao dos resultados.
+- `[x]` Explicitar o tipo de contribuicao como prova de conceito reprodutivel, e nao como benchmark definitivo.
+- `[x]` Incluir discussao curta de ameacas a validade em `sections/06-experimentos.tex`.
+- `[x]` Reforcar a criticidade da fundamentacao teorica sobre RAG, chunking e avaliacao por LLM juiz.
 
 ## Prioridade alta
 
@@ -80,16 +83,16 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[ ]` Adicionar uma figura simples da arquitetura ou do pipeline.
   O texto descreve bem o fluxo, mas uma figura fortaleceria a compreensao rapida da solucao.
 
-- `[ ]` Aumentar a criticidade da revisao de literatura.
-  A fundamentacao esta boa, mas em alguns pontos ela resume os autores mais do que contrasta abordagens, limites e decisoes metodologicas adotadas no artigo.
+- `[x]` Aumentar a criticidade da revisao de literatura.
+  A fundamentacao foi reforcada para explicitar que RAG e uma estrategia parcial, nao garantia automatica de qualidade; que chunking e uma decisao empirica sensivel; e que avaliacao por LLM juiz deve ser tratada como instrumento auxiliar, sujeito a variacao conforme modelo e rubrica.
 
 ## Prioridade baixa
 
 - `[x]` Enxugar e atualizar o resumo em relacao a ferramentas e avaliacao.
   O resumo agora explicita a demonstracao empirica com inspecao manual, tres rodadas automatizadas, rubrica, julgamento por LLM e analise manual amostral.
 
-- `[ ]` Considerar uma secao ou paragrafo curto com ameacas a validade.
-  Isso pode deixar o artigo mais robusto metodologicamente, especialmente se a avaliacao continuar predominantemente qualitativa.
+- `[x]` Considerar uma secao ou paragrafo curto com ameacas a validade.
+  Foi incluida subseção especifica em `sections/06-experimentos.tex`, reconhecendo limitacoes de tamanho e balanceamento da bateria, sensibilidade do LLM Judge, validacao manual amostral e dependencia da configuracao do Open WebUI.
 
 - `[ ]` Se houver espaco, incluir breve discussao sobre generalizacao.
   Por exemplo, o que do pipeline parece especifico para discursos do Senado e o que parece reutilizavel para outros acervos legislativos.
@@ -103,13 +106,13 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   Boa delimitacao do problema, boa justificativa para uso de RAG e boa conexao com administracao publica.
 
 - `[x]` Fundamentacao teorica:
-  Revisada para tornar mais clara a relacao entre literatura, lacuna de pesquisa e contribuicao especifica do trabalho. Ainda pode receber refinamentos pontuais de criticidade, mas a funcao estrutural da secao ja esta atendida.
+  Revisada para tornar mais clara a relacao entre literatura, lacuna de pesquisa e contribuicao especifica do trabalho, incorporando tambem leitura mais critica sobre limites do RAG, escolhas de chunking e uso de LLM como juiz.
 
 - `[x]` Proposta de solucao:
   Revisada para corrigir a descricao da arquitetura, alinhar o fluxo de consulta ao prompt operacional do Open WebUI e atualizar a descricao da avaliacao automatizada.
 
 - `[x]` Experimentos e demonstracao:
-  A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, tabela das tres rodadas principais no `Apêndice A`, tres estudos de caso no `Apêndice B`, documentacao do prompt operacional no `Apêndice C`, teste de sensibilidade com juiz alternativo e discussao sobre divergencia entre avaliacao automatica e leitura manual amostral.
+  A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, tabela das tres rodadas principais no `Apêndice A`, tres estudos de caso no `Apêndice B`, documentacao do prompt operacional no `Apêndice C`, teste de sensibilidade com juiz alternativo, discussao sobre divergencia entre avaliacao automatica e leitura manual amostral, e subseção de ameaças a validade.
 
 - `[x]` Conclusao:
   Revisada para refletir as tres rodadas recentes, a triangulacao manual, a sensibilidade do juiz automatizado e os trabalhos futuros mais coerentes com o estado atual do experimento.
@@ -131,7 +134,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 - `[~]` Fazer revisao visual final do PDF ja compilado para:
   - verificar quebras de pagina, tabelas longas, apendices, notas de rodape e referencias;
-  - decidir se a figura simples da arquitetura ou do pipeline deve ser incluida antes da entrega.
+  - decidir se a figura simples da arquitetura ou do pipeline deve ser incluida antes da entrega;
+  - evitar alteracoes puramente visuais antes do fechamento do conteudo academico.
 
 ## Retomada sugerida
 
