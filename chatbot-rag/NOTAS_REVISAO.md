@@ -71,12 +71,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Corrigir uma ambiguidade na descricao da arquitetura em `sections/05-proposta.tex`.
   O texto foi ajustado para falar em cinco componentes articulados: Open WebUI, scripts Python, ChromaDB, Ollama e API da OpenAI.
 
-- `[ ]` Tornar a lacuna de pesquisa mais especifica em `sections/03-fundamentacao.tex`.
-  A secao de `Sintese da revisao e lacuna de pesquisa` pode dizer com mais forca qual e a originalidade do trabalho. Possiveis eixos:
-  - dominio legislativo brasileiro
-  - discursos da 56a Legislatura
-  - foco em auditabilidade
-  - pipeline reprodutivel com metadados legislativos
+- `[x]` Tornar a lacuna de pesquisa mais especifica em `sections/03-fundamentacao.tex`.
+  A secao de `Sintese da revisao e lacuna de pesquisa` foi revisada para explicitar a lacuna aplicada do trabalho: ainda sao menos frequentes estudos que combinem corpus parlamentar brasileiro, discursos da 56a Legislatura, preparacao reprodutivel de base documental, preservacao de metadados legislativos, fluxo RAG operacional e avaliacao empirica das respostas geradas.
 
 - `[x]` Reduzir formulacoes excessivamente abstratas ou repetitivas.
   Foi realizada revisao de fluidez em introducao, fundamentacao, proposta, experimentos e conclusao, substituindo repeticoes de termos como auditabilidade, rastreabilidade e governanca por formulacoes mais especificas quando apropriado.
@@ -106,8 +102,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[ ]` Introducao:
   Boa delimitacao do problema, boa justificativa para uso de RAG e boa conexao com administracao publica.
 
-- `[ ]` Fundamentacao teorica:
-  Solida e pertinente, mas pode ganhar mais comparacao critica entre autores e mais explicacao de por que certas escolhas tecnicas foram adotadas.
+- `[x]` Fundamentacao teorica:
+  Revisada para tornar mais clara a relacao entre literatura, lacuna de pesquisa e contribuicao especifica do trabalho. Ainda pode receber refinamentos pontuais de criticidade, mas a funcao estrutural da secao ja esta atendida.
 
 - `[x]` Proposta de solucao:
   Revisada para corrigir a descricao da arquitetura, alinhar o fluxo de consulta ao prompt operacional do Open WebUI e atualizar a descricao da avaliacao automatizada.
@@ -133,14 +129,15 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Proxima acao recomendada
 
-- `[~]` Fazer revisao de consistencia final do manuscrito completo para:
-  - revisar fluidez academica e consistencia entre introducao, fundamentacao, proposta, experimentos e conclusao.
+- `[~]` Fazer revisao visual final do PDF ja compilado para:
+  - verificar quebras de pagina, tabelas longas, apendices, notas de rodape e referencias;
+  - decidir se a figura simples da arquitetura ou do pipeline deve ser incluida antes da entrega.
 
 ## Retomada sugerida
 
 Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
-1. revisar a fundamentacao teorica para tornar a lacuna de pesquisa mais explicita;
-2. avaliar se vale incluir uma figura simples da arquitetura ou do pipeline;
-3. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas e apendices;
+1. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas, notas de rodape, referencias e apendices;
+2. decidir se vale incluir uma figura simples da arquitetura ou do pipeline;
+3. reavaliar rapidamente o peso de fontes nao academicas e a aparencia final dos autores institucionais;
 4. recompilar o PDF e fazer revisao visual final.
