@@ -78,8 +78,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   - foco em auditabilidade
   - pipeline reprodutivel com metadados legislativos
 
-- `[ ]` Reduzir formulacoes excessivamente abstratas ou repetitivas.
-  O texto trabalha bem conceitos como auditabilidade, rastreabilidade, governanca e explicabilidade, mas em alguns trechos esses termos aparecem de forma recorrente sem adicionar nova camada analitica.
+- `[x]` Reduzir formulacoes excessivamente abstratas ou repetitivas.
+  Foi realizada revisao de fluidez em introducao, fundamentacao, proposta, experimentos e conclusao, substituindo repeticoes de termos como auditabilidade, rastreabilidade e governanca por formulacoes mais especificas quando apropriado.
 
 - `[ ]` Adicionar uma figura simples da arquitetura ou do pipeline.
   O texto descreve bem o fluxo, mas uma figura fortaleceria a compreensao rapida da solucao.
@@ -134,14 +134,13 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Proxima acao recomendada
 
 - `[~]` Fazer revisao de consistencia final do manuscrito completo para:
-  - reduzir eventuais repeticoes de termos como auditabilidade, rastreabilidade e governanca.
   - revisar fluidez academica e consistencia entre introducao, fundamentacao, proposta, experimentos e conclusao.
 
 ## Retomada sugerida
 
 Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
-1. fazer uma leitura final de fluidez academica e evitar repeticoes conceituais;
-2. revisar a fundamentacao teorica para tornar a lacuna de pesquisa mais explicita;
-3. avaliar se vale incluir uma figura simples da arquitetura ou do pipeline;
+1. revisar a fundamentacao teorica para tornar a lacuna de pesquisa mais explicita;
+2. avaliar se vale incluir uma figura simples da arquitetura ou do pipeline;
+3. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas e apendices;
 4. recompilar o PDF e fazer revisao visual final.
