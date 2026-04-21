@@ -33,6 +33,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Incorporar Textos para Discussao recentes da Consultoria Legislativa do Senado sobre discursos em Plenario como fontes institucionais de dominio, reforcando a relevancia empirica do corpus parlamentar brasileiro.
 - `[x]` Revisar a coerencia final entre resumo, introducao, objetivos, experimentos e conclusao para manter a contribuicao como prova de conceito reprodutivel, sem sugerir benchmark definitivo ou prontidao operacional ampla.
 - `[x]` Verificar notas de rodape com artefatos experimentais e links externos centrais, confirmando que os enderecos publicos retornam com sucesso.
+- `[x]` Incluir discussao breve de generalizacao, distinguindo elementos especificos dos discursos do Senado de componentes reaproveitaveis do pipeline em outros acervos legislativos.
+- `[x]` Reforcar o contraste em trabalhos relacionados: literatura de discurso parlamentar analisa o corpus, literatura de RAG fornece a base tecnica, e este artigo conecta ambas por meio de uma prova de conceito avaliada.
 
 ## Prioridade alta
 
@@ -98,7 +100,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Considerar uma secao ou paragrafo curto com ameacas a validade.
   Foi incluida subseção especifica em `sections/06-experimentos.tex`, reconhecendo limitacoes de tamanho e balanceamento da bateria, sensibilidade do LLM Judge, validacao manual amostral e dependencia da configuracao do Open WebUI.
 
-- `[ ]` Se houver espaco, incluir breve discussao sobre generalizacao.
+- `[x]` Se houver espaco, incluir breve discussao sobre generalizacao.
   Por exemplo, o que do pipeline parece especifico para discursos do Senado e o que parece reutilizavel para outros acervos legislativos.
 
 ## Comentarios por secao
