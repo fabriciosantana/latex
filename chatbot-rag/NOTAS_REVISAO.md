@@ -24,6 +24,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Alinhar `sections/06-experimentos.tex` as rodadas automatizadas recentes executadas apos a adaptacao do fluxo experimental.
 - `[x]` Atualizar o `Apêndice A` para sintetizar as tres rodadas principais e apresentar as notas por pergunta em cada rodada.
 - `[x]` Manter no `Apêndice C` apenas o prompt operacional do fluxo RAG configurado no Open WebUI.
+- `[x]` Revisar `sections/01-resumo.tex`, `sections/05-proposta.tex` e `sections/07-conclusao.tex` para alinhar a narrativa geral a demonstracao empirica atual.
 
 ## Prioridade alta
 
@@ -66,8 +67,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Prioridade media
 
-- `[ ]` Corrigir uma ambiguidade na descricao da arquitetura em `sections/05-proposta.tex`.
-  O texto afirma haver "tres servicos principais", mas a lista inclui Open WebUI, scripts Python, ChromaDB, Ollama e API da OpenAI. Convem reescrever para evitar incoerencia quantitativa.
+- `[x]` Corrigir uma ambiguidade na descricao da arquitetura em `sections/05-proposta.tex`.
+  O texto foi ajustado para falar em cinco componentes articulados: Open WebUI, scripts Python, ChromaDB, Ollama e API da OpenAI.
 
 - `[ ]` Tornar a lacuna de pesquisa mais especifica em `sections/03-fundamentacao.tex`.
   A secao de `Sintese da revisao e lacuna de pesquisa` pode dizer com mais forca qual e a originalidade do trabalho. Possiveis eixos:
@@ -87,8 +88,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Prioridade baixa
 
-- `[ ]` Enxugar o resumo em relacao a ferramentas.
-  O resumo esta bom, mas pode ficar mais forte se reduzir um pouco a enumeracao de tecnologias e incluir uma frase um pouco mais clara sobre o metodo de avaliacao.
+- `[x]` Enxugar e atualizar o resumo em relacao a ferramentas e avaliacao.
+  O resumo agora explicita a demonstracao empirica com inspecao manual, tres rodadas automatizadas, rubrica, julgamento por LLM e analise manual amostral.
 
 - `[ ]` Considerar uma secao ou paragrafo curto com ameacas a validade.
   Isso pode deixar o artigo mais robusto metodologicamente, especialmente se a avaliacao continuar predominantemente qualitativa.
@@ -98,8 +99,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Comentarios por secao
 
-- `[ ]` Resumo:
-  Esta fiel ao restante do texto. Melhorias principais: sintetizar melhor as ferramentas e explicitar um pouco melhor a avaliacao.
+- `[x]` Resumo:
+  Revisado para refletir a forma final da demonstracao empirica e os limites observados em consultas numericas, comparativas, multifocais e de controle de escopo.
 
 - `[ ]` Introducao:
   Boa delimitacao do problema, boa justificativa para uso de RAG e boa conexao com administracao publica.
@@ -107,14 +108,14 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[ ]` Fundamentacao teorica:
   Solida e pertinente, mas pode ganhar mais comparacao critica entre autores e mais explicacao de por que certas escolhas tecnicas foram adotadas.
 
-- `[ ]` Proposta de solucao:
-  E uma das secoes mais fortes do artigo. O pipeline esta claro, concreto e bem conectado com os objetivos.
+- `[x]` Proposta de solucao:
+  Revisada para corrigir a descricao da arquitetura, alinhar o fluxo de consulta ao prompt operacional do Open WebUI e atualizar a descricao da avaliacao automatizada.
 
 - `[x]` Experimentos e demonstracao:
   A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, tabela das tres rodadas principais no `Apêndice A`, tres estudos de caso no `Apêndice B`, documentacao do prompt operacional no `Apêndice C`, teste de sensibilidade com juiz alternativo e discussao sobre divergencia entre avaliacao automatica e leitura manual amostral.
 
-- `[ ]` Conclusao:
-  Coerente com o que foi demonstrado e sem extrapolacoes excessivas.
+- `[x]` Conclusao:
+  Revisada para refletir as tres rodadas recentes, a triangulacao manual, a sensibilidade do juiz automatizado e os trabalhos futuros mais coerentes com o estado atual do experimento.
 
 ## Referencias e padronizacao
 
@@ -132,17 +133,16 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Proxima acao recomendada
 
 - `[~]` Fazer revisao de consistencia final do manuscrito completo para:
-  - verificar se resumo e conclusao refletem a demonstracao empirica atual;
-  - revisar `sections/05-proposta.tex` para alinhar a descricao da arquitetura ao fluxo experimental atual;
   - decidir se vale incluir um quadro curto de objetivos, evidencias e conclusoes;
   - reduzir eventuais repeticoes de termos como auditabilidade, rastreabilidade e governanca.
+  - revisar fluidez academica e consistencia entre introducao, fundamentacao, proposta, experimentos e conclusao.
 
 ## Retomada sugerida
 
 Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
-1. revisar resumo e conclusao para refletir a forma final da demonstracao empirica;
-2. revisar `sections/05-proposta.tex` para corrigir a ambiguidade sobre a quantidade de servicos/componentes da arquitetura;
-3. decidir se um quadro curto de objetivos, evidencias e conclusoes entra no corpo do texto;
-4. fazer uma leitura final de fluidez academica e evitar repeticoes conceituais;
+1. decidir se um quadro curto de objetivos, evidencias e conclusoes entra no corpo do texto;
+2. fazer uma leitura final de fluidez academica e evitar repeticoes conceituais;
+3. revisar a fundamentacao teorica para tornar a lacuna de pesquisa mais explicita;
+4. avaliar se vale incluir uma figura simples da arquitetura ou do pipeline;
 5. recompilar o PDF e fazer revisao visual final.
