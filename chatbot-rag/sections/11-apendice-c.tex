@@ -1,13 +1,13 @@
 \clearpage
 \phantomsection
 \refstepcounter{section}
-\addcontentsline{toc}{section}{APÊNDICE \Alph{section} -- PROMPTS DO FLUXO RAG E DA AVALIAÇÃO AUTOMATIZADA}
+\addcontentsline{toc}{section}{APÊNDICE \Alph{section} -- PROMPT DO FLUXO RAG}
 \begin{center}
-\textbf{APÊNDICE \Alph{section} -- PROMPTS DO FLUXO RAG E DA AVALIAÇÃO AUTOMATIZADA}
+\textbf{APÊNDICE \Alph{section} -- PROMPT DO FLUXO RAG}
 \end{center}
 \label{sec:apendice-prompt-rag}
 
-Este apêndice registra dois artefatos textuais relacionados ao fluxo RAG. O primeiro é o prompt configurado no modelo RAG do Open WebUI\footnote{\url{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/prompts/rag_prompt.md}}, associado ao uso interativo do sistema na própria plataforma. O segundo é o \textit{system prompt} empregado pelo script na geração da bateria automatizada\footnote{\url{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/prompts/rag_answer_system.md}}. Embora não sejam idênticos, os dois artefatos preservam o mesmo núcleo metodológico: fidelidade ao contexto recuperado, controle de escopo, reconhecimento de limites, cautela no uso de conhecimento externo e orientação à auditabilidade.
+Este apêndice registra o prompt configurado no modelo RAG do Open WebUI\footnote{\url{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/prompts/rag_prompt.md}}, associado ao uso interativo do sistema na própria plataforma e à bateria automatizada mais recente. O prompt explicita o núcleo metodológico adotado no experimento: fidelidade ao contexto recuperado, controle de escopo, reconhecimento de limites, cautela no uso de conhecimento externo e orientação à auditabilidade.
 
 \subsection{Prompt operacional do modelo RAG no Open WebUI}
 
@@ -74,32 +74,4 @@ Siga esta ordem, quando aplicável:
 <context>
 {{CONTEXT}}
 </context>
-\end{Verbatim}
-
-\subsection{\textit{System prompt} da geração automatizada}
-
-\begin{Verbatim}[breaklines=true]
-Voce esta sendo avaliado em uma tarefa de RAG.
-Sua prioridade e responder com fidelidade ao contexto recuperado, nao parecer completo.
-
-Regras:
-- Use apenas o que estiver sustentado pelo contexto recuperado.
-- Nao invente fatos, numeros, autores, datas, links ou relacoes causais.
-- Nao use conhecimento externo. Se algo nao estiver sustentado no contexto, diga isso claramente.
-- Se a pergunta tiver partes e apenas algumas estiverem cobertas pelo contexto, responda somente as partes sustentadas e explicite o que nao foi encontrado.
-- Se houver ambiguidade, conflito, mistura de autores ou baixa confianca no contexto, sinalize isso.
-- Prefira nao responder a arriscar.
-- Seja fiel ao escopo da pergunta; nao amplie o assunto sem necessidade.
-- Responda em portugues.
-
-Citações e referencias:
-- Apoie afirmacoes factuais importantes com evidencias do contexto ao longo da resposta, quando isso for possivel.
-- Nao invente referencias nem metadados ausentes.
-- So inclua uma secao final "Referencias" se houver metadados claros no contexto.
-
-Estilo:
-- Seja objetivo, direto e proporcional a pergunta.
-- Evite floreios, redundancia e excesso de contexto periferico.
-- Prefira sintese fiel a transcricoes longas.
-- Se a melhor resposta for parcial ou inconclusiva, diga isso explicitamente.
 \end{Verbatim}
