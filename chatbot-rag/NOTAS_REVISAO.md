@@ -86,8 +86,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Reduzir formulacoes excessivamente abstratas ou repetitivas.
   Foi realizada revisao de fluidez em introducao, fundamentacao, proposta, experimentos e conclusao, substituindo repeticoes de termos como auditabilidade, rastreabilidade e governanca por formulacoes mais especificas quando apropriado.
 
-- `[ ]` Adicionar uma figura simples da arquitetura ou do pipeline.
-  O texto descreve bem o fluxo, mas uma figura fortaleceria a compreensao rapida da solucao.
+- `[x]` Adicionar uma figura simples da arquitetura ou do pipeline.
+  Foi inserida uma figura em TikZ em `sections/05-proposta.tex`, sintetizando o fluxo da prova de conceito desde o dataset legislativo, preparacao documental e ingestao ate consulta RAG e avaliacao.
 
 - `[x]` Aumentar a criticidade da revisao de literatura.
   A fundamentacao foi reforcada para explicitar que RAG e uma estrategia parcial, nao garantia automatica de qualidade; que chunking e uma decisao empirica sensivel; e que avaliacao por LLM juiz deve ser tratada como instrumento auxiliar, sujeito a variacao conforme modelo e rubrica.
@@ -143,7 +143,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 - `[~]` Fazer revisao visual final do PDF ja compilado, somente apos o fechamento academico do conteudo, para:
   - verificar quebras de pagina, tabelas longas, apendices, notas de rodape e referencias;
-  - decidir se a figura simples da arquitetura ou do pipeline deve ser incluida antes da entrega;
+  - conferir a posicao e legibilidade da figura simples do pipeline;
   - evitar alteracoes puramente visuais antes do fechamento do conteudo academico.
 
 ## Retomada sugerida
@@ -151,6 +151,6 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
 1. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas, notas de rodape, referencias e apendices;
-2. decidir se vale incluir uma figura simples da arquitetura ou do pipeline;
+2. conferir a legibilidade e a posicao da figura do pipeline;
 3. revisar rapidamente a aparencia final dos autores institucionais e das novas referencias academicas na bibliografia;
 4. recompilar o PDF e fazer revisao visual final de baixo risco.

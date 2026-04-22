@@ -16,6 +16,39 @@ A partir desses segmentos, foram gerados arquivos de ingestão para o Open WebUI
 
 Na etapa de consulta, o fluxo RAG integra recuperação vetorial, montagem de contexto, aplicação do prompt operacional configurado no Open WebUI e geração da resposta pelo modelo. Por fim, a avaliação foi apoiada por automação em Python, que consulta a \textit{knowledge base} via API e produz saídas nos formatos \texttt{.jsonl}, \texttt{.md} e \texttt{.csv}, viabilizando análise estruturada, avaliação por LLM como juiz, revisão qualitativa e comparação entre execuções.
 
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  node distance=0.72cm,
+  box/.style={
+    draw,
+    rounded corners,
+    align=center,
+    minimum width=4.8cm,
+    minimum height=0.82cm,
+    font=\small
+  },
+  arrow/.style={-{Latex}, thick}
+]
+\node[box] (dataset) {Dataset de discursos\\56\textordfeminine{} Legislatura};
+\node[box, below=of dataset] (prep) {Preparação documental\\seleção textual, chunking e metadados};
+\node[box, below=of prep] (ingest) {Artefatos de ingestão\\Markdown em lotes e JSONL};
+\node[box, below=of ingest] (openwebui) {Open WebUI\\ingestão e orquestração RAG};
+\node[box, below=of openwebui] (vector) {Embeddings e ChromaDB\\indexação vetorial};
+\node[box, below=of vector] (query) {Consulta em linguagem natural\\recuperação, contexto e geração};
+\node[box, below=of query] (eval) {Avaliação\\LLM juiz, rubrica e análise manual};
+
+\draw[arrow] (dataset) -- (prep);
+\draw[arrow] (prep) -- (ingest);
+\draw[arrow] (ingest) -- (openwebui);
+\draw[arrow] (openwebui) -- (vector);
+\draw[arrow] (vector) -- (query);
+\draw[arrow] (query) -- (eval);
+\end{tikzpicture}
+\caption{Fluxo geral da prova de conceito RAG para consulta a discursos legislativos}
+\label{fig:pipeline-rag}
+\end{figure}
+
 \subsection{Principais contribuições}
 
 O projeto apresenta contribuições em dois níveis complementares: técnico e institucional. No plano técnico, constrói-se uma prova de conceito reprodutível de chatbot legislativo com RAG, adaptada a um acervo real do Senado Federal. A contribuição não consiste em propor um benchmark definitivo para avaliação de RAG legislativo, mas em documentar um pipeline completo, com preparação da base, enriquecimento de chunks por metadados, ingestão, consulta, avaliação automatizada, análise qualitativa e discussão explícita dos limites observados. Nesse percurso, evidencia-se empiricamente a sensibilidade do desempenho à formulação das perguntas, ao controle de escopo, à escolha do LLM juiz e à configuração da recuperação semântica.
