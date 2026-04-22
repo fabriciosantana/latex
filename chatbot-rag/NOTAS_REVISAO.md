@@ -112,7 +112,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   Boa delimitacao do problema, boa justificativa para uso de RAG e boa conexao com administracao publica.
 
 - `[x]` Fundamentacao teorica:
-  Revisada para tornar mais clara a relacao entre literatura, lacuna de pesquisa e contribuicao especifica do trabalho, incorporando tambem leitura mais critica sobre limites do RAG, escolhas de chunking e uso de LLM como juiz.
+  Revisada para tornar mais clara a relacao entre literatura, lacuna de pesquisa e contribuicao especifica do trabalho, incorporando tambem leitura mais critica sobre limites do RAG, escolhas de chunking e uso de LLM como juiz. Em revisao posterior, a secao foi levemente enxugada, com compactacao de passagens sobre arquitetura RAG, tecnicas, governanca e avaliacao, sem remocao das bases bibliograficas centrais.
 
 - `[x]` Proposta de solucao:
   Revisada para corrigir a descricao da arquitetura, alinhar o fluxo de consulta ao prompt operacional do Open WebUI e atualizar a descricao da avaliacao automatizada.
