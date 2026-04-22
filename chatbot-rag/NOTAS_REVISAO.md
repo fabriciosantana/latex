@@ -9,7 +9,7 @@ Legenda de status:
 
 ## Diagnostico geral
 
-O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral, ameaças a validade e documentacao do prompt operacional do fluxo RAG. As pendencias remanescentes sao de refinamento de apresentacao e consistencia final entre secoes, nao mais de ausencia de evidencia.
+O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral, ameaças a validade e documentacao do prompt operacional do fluxo RAG. Na versao atual, os apendices foram omitidos do PDF e substituidos por notas de rodape para artefatos publicos no repositorio. As pendencias remanescentes sao de refinamento de apresentacao e consistencia final entre secoes, nao mais de ausencia de evidencia.
 
 ## Progresso ja concluido
 
@@ -24,6 +24,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Alinhar `sections/06-experimentos.tex` as rodadas automatizadas recentes executadas apos a adaptacao do fluxo experimental.
 - `[x]` Atualizar o `Apêndice A` para sintetizar as tres rodadas principais e apresentar as notas por pergunta em cada rodada.
 - `[x]` Manter no `Apêndice C` apenas o prompt operacional do fluxo RAG configurado no Open WebUI.
+- `[x]` Omitir os apendices da versao atual do artigo sem apagar seus arquivos.
+  Os `inputs` dos apendices foram comentados em `main.tex`, e as referencias no corpo foram substituidas por notas de rodape para os artefatos publicos correspondentes.
 - `[x]` Revisar `sections/01-resumo.tex`, `sections/05-proposta.tex` e `sections/07-conclusao.tex` para alinhar a narrativa geral a demonstracao empirica atual.
 - `[x]` Incluir quadro curto em `sections/06-experimentos.tex` conectando objetivos avaliados, evidencias empiricas e interpretacao dos resultados.
 - `[x]` Explicitar o tipo de contribuicao como prova de conceito reprodutivel, e nao como benchmark definitivo.
@@ -120,7 +122,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   Revisada para corrigir a descricao da arquitetura, alinhar o fluxo de consulta ao prompt operacional do Open WebUI e atualizar a descricao da avaliacao automatizada.
 
 - `[x]` Experimentos e demonstracao:
-  A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, tabela das tres rodadas principais no `Apêndice A`, tres estudos de caso no `Apêndice B`, documentacao do prompt operacional no `Apêndice C`, teste de sensibilidade com LLM juiz alternativo, discussao sobre divergencia entre avaliacao automatica e leitura manual amostral, e subseção de ameaças a validade.
+  A secao foi reforcada com resultados manuais e automatizados datados, tipologia inspirada em benchmarks RAG recentes, referencias em nota de rodape para os artefatos das tres rodadas principais, tres estudos de caso, prompt operacional, teste de sensibilidade com LLM juiz alternativo, discussao sobre divergencia entre avaliacao automatica e leitura manual amostral, e subseção de ameaças a validade.
 
 - `[x]` Conclusao:
   Revisada para refletir as tres rodadas recentes, a triangulacao manual, a sensibilidade do LLM juiz e os trabalhos futuros mais coerentes com o estado atual do experimento.
@@ -144,7 +146,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Proxima acao recomendada
 
 - `[~]` Fazer revisao visual final do PDF ja compilado, somente apos o fechamento academico do conteudo, para:
-  - verificar quebras de pagina, tabelas longas, apendices, notas de rodape e referencias;
+  - verificar quebras de pagina, tabelas longas remanescentes, notas de rodape e referencias;
   - conferir a posicao e legibilidade da figura simples do pipeline;
   - evitar alteracoes puramente visuais antes do fechamento do conteudo academico.
 
@@ -152,7 +154,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
 
-1. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas, notas de rodape, referencias e apendices;
+1. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas, notas de rodape e referencias;
 2. conferir a legibilidade e a posicao da figura do pipeline;
 3. revisar rapidamente a aparencia final dos autores institucionais e das novas referencias academicas na bibliografia;
 4. recompilar o PDF e fazer revisao visual final de baixo risco.
