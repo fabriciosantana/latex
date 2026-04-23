@@ -14,7 +14,7 @@ Em seguida, realizou-se o \textit{chunking}, com geração de segmentos enriquec
 
 A partir desses segmentos, foram gerados lotes de ingestão para o Open WebUI em formato Markdown, além de um arquivo \texttt{jsonl} de referência. A importação desses lotes foi automatizada por script responsável por realizar o upload, monitorar o processamento e viabilizar a inclusão dos conteúdos na \textit{knowledge base} do Open WebUI. Concluída a ingestão, procedeu-se à indexação vetorial, com geração e persistência dos \textit{embeddings} no ChromaDB.
 
-Na etapa de consulta, o fluxo RAG integra recuperação vetorial, montagem do contexto recuperado, aplicação do prompt operacional configurado no Open WebUI e geração da resposta pelo modelo. Por fim, a avaliação foi apoiada por automação em Python, que consulta a \textit{knowledge base} via API e produz saídas nos formatos \texttt{.jsonl}, \texttt{.md} e \texttt{.csv}, viabilizando análise estruturada, avaliação por LLM como juiz, revisão qualitativa e comparação entre execuções.
+Na etapa de consulta, o fluxo RAG opera com recuperação vetorial, montagem do contexto recuperado, aplicação do prompt operacional configurado no Open WebUI e geração da resposta pelo modelo, com parte desses passos internalizada na própria plataforma. Por fim, a avaliação foi apoiada por automação em Python, que consulta a \textit{knowledge base} via API e produz saídas nos formatos \texttt{.jsonl}, \texttt{.md} e \texttt{.csv}, viabilizando análise estruturada, avaliação por LLM como juiz, revisão qualitativa e comparação entre execuções.
 
 \begin{figure}[ht]
 \centering
