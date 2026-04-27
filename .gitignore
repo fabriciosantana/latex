@@ -1,4 +1,5 @@
 out/
+aux/
 *.aux
 *.bbl
 *.bcf
