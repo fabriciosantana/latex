@@ -24,24 +24,22 @@ Na inspeção manual, adotaram-se três estudos de caso exemplificativos, docume
 
 A avaliação automatizada foi consolidada a partir das três rodadas completas executadas após o alinhamento entre o fluxo automatizado e a configuração operacional do Open WebUI\footnote{\href{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/results/rag_eval_20260416T172816Z.csv}{CSV da rodada base}; \href{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/results/rag_eval_20260416T182240Z.csv}{CSV da segunda rodada}; \href{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/results/rag_eval_20260416T232921Z.csv}{CSV da terceira rodada}; \href{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/results/stability_summary_20260417T012001Z.md}{síntese de estabilidade}.}. Em cada rodada, 20 perguntas foram submetidas à \textit{knowledge base}, todas as respostas foram geradas com sucesso e, em seguida, avaliadas em uma segunda etapa de avaliação por LLM como juiz, com base na rubrica definida para o experimento. As médias observadas foram 9,15, 9,55 e 9,35 pontos em 10, resultando em média agregada de 9,35. Não houve falhas nas três execuções. No vocabulário da rubrica adotada, 17 respostas da primeira rodada ficaram na faixa ``pronta para uso'' (8--10) e 3 na faixa ``utilizável com supervisão'' (5--7); nas duas rodadas seguintes, 19 respostas ficaram na primeira faixa e 1 na segunda. Essas faixas indicam qualidade estimada no escopo do experimento, e não prontidão operacional ampla. O conjunto de 20 perguntas, suas categorias e as notas obtidas nas três rodadas está disponível nos artefatos públicos da avaliação\footnote{\href{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/discursos_questions.json}{Conjunto de perguntas}; \href{https://github.com/fabriciosantana/mcdia/blob/main/05-iag/4-project/eval/results/rag_eval_20260416T172816Z.question_analysis.md}{análise por pergunta da rodada base}.}. Esse material já distingue categorias inspiradas diretamente na literatura de \textit{benchmarks} RAG \parencite{zhuEtAl2025rageval} e categorias introduzidas como adaptação metodológica deste trabalho.
 
-\begingroup
+\begin{table}[t]
+\centering
 \footnotesize
-\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}@{}}
-\caption{Síntese entre objetivos, evidências e interpretação dos resultados}\label{tab:sintese-objetivos-resultados}\\
+\caption{Síntese entre objetivos, evidências e interpretação dos resultados}
+\label{tab:sintese-objetivos-resultados}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}@{}}
 \textbf{Objetivo avaliado} & \textbf{Evidência empírica} & \textbf{Interpretação} \\
 \hline
-\endfirsthead
-\textbf{Objetivo avaliado} & \textbf{Evidência empírica} & \textbf{Interpretação} \\
-\hline
-\endhead
 Construir base verificável & 15.726 discursos aproveitados, 23.806 chunks gerados e metadados legislativos preservados & A base construída mostrou-se operacional e rastreável para a avaliação realizada. \\
 Validar consulta assistida & Três estudos de caso manuais representando caso forte, caso de cautela e caso de limite & O sistema apresenta melhor desempenho quando a pergunta é delimitada por autor, tema ou evidência documental. \\
 Avaliar desempenho automatizado & Três rodadas completas, com médias 9,15, 9,55 e 9,35, sem falhas operacionais & O desempenho agregado foi alto nas métricas adotadas, embora com variação em itens mais complexos. \\
 Identificar limites de uso & Oscilação em perguntas de precisão numérica, controle de escopo, multietapas e autoria cruzada & Consultas de maior abstração exigem supervisão humana e formulação cuidadosa. \\
 Verificar robustez da avaliação por LLM & Análise manual amostral com convergência geral, mas divergência relevante em item de checagem de alucinação & O LLM como juiz é útil para escalar a avaliação, mas não substitui validação humana em casos críticos. \\
 \hline
-\end{longtable}
-\endgroup
+\end{tabular}
+\end{table}
 
 Rodadas complementares com outro modelo na etapa de avaliação por LLM foram usadas apenas como teste. Embora tenham completado a bateria, elas atribuíram nota máxima a todos os itens, o que sugeriu um padrão excessivamente permissivo de julgamento por parte do LLM juiz alternativo. Por essa razão, tais execuções não foram adotadas como evidência quantitativa principal, mas como alerta metodológico sobre a influência do modelo avaliador na estratégia de \textit{LLM as a Judge}.
 
