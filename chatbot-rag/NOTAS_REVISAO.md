@@ -145,16 +145,21 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 ## Proxima acao recomendada
 
-- `[~]` Fazer revisao visual final do PDF ja compilado, somente apos o fechamento academico do conteudo, para:
+- `[x]` Fazer revisao visual final do PDF ja compilado, somente apos o fechamento academico do conteudo, para:
   - verificar quebras de pagina, tabelas longas remanescentes, notas de rodape e referencias;
   - conferir a posicao e legibilidade da figura simples do pipeline;
   - evitar alteracoes puramente visuais antes do fechamento do conteudo academico.
+  Revisao executada em `out/main.pdf`. A figura do pipeline foi conferida e permaneceu legivel. A bibliografia nao apresentou citacoes indefinidas no log. Foi identificado e corrigido um problema visual na Tabela 1, que estava quebrando entre paginas com a legenda separada do corpo; a tabela curta foi convertida de `longtable` para `table`/`tabular` em `sections/06-experimentos.tex`.
+
+- `[x]` Recompilar o PDF apos os ajustes visuais.
+  `latexmk -pdf main.tex` foi executado ate estabilizar as referencias. O PDF final permanece em `out/main.pdf`, com 20 paginas. O unico aviso residual observado no log e o fallback conhecido do `biblatex-abnt` para `brazilian-abnt-abnt.lbx`, sem indicacao de citacoes ou referencias indefinidas.
 
 ## Retomada sugerida
 
-Quando o trabalho for retomado, a sequencia mais eficiente parece ser:
+Quando o trabalho for retomado, a sequencia mais eficiente agora parece ser:
 
-1. fazer uma leitura final do PDF ja compilado, com foco em quebras, tabelas, notas de rodape e referencias;
-2. conferir a legibilidade e a posicao da figura do pipeline;
-3. revisar rapidamente a aparencia final dos autores institucionais e das novas referencias academicas na bibliografia;
-4. recompilar o PDF e fazer revisao visual final de baixo risco.
+1. fazer apenas uma leitura humana final de ponta a ponta em `out/main.pdf`, sem reabrir revisao de conteudo salvo se aparecer erro material;
+2. conferir dados de capa, nomes dos autores, turma, disciplina, professor e URL do repositorio;
+3. conferir se os links externos das notas de rodape sao aceitaveis para a forma de entrega escolhida;
+4. se nada novo aparecer, congelar a versao para submissao/entrega;
+5. se houver qualquer ajuste pontual, recompilar com `latexmk -pdf main.tex` e revisar somente a pagina afetada.
