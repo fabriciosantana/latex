@@ -20,6 +20,7 @@
 - Antes de propor ou executar mudancas relevantes em um artigo, identificar o diretorio do artigo e ler seus arquivos de contexto locais.
 - Procurar por `AGENTS.md`, notas de revisao, plano de acao, `main.tex`, secoes e arquivo `.bib` dentro do diretorio do artigo.
 - Se houver ambiguidade sobre o objetivo editorial, perguntar diretamente se a prioridade e fechar uma versao de entrega academica, preparar submissao a periodico ou desenvolver uma nova etapa de pesquisa.
+- Para revisoes de literatura auditaveis, seguir `docs/fluxo-revisao-literatura.md`.
 
 ## Skills do repositorio
 

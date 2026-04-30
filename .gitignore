@@ -1,5 +1,6 @@
 out/
 aux/
+.env
 *.aux
 *.bbl
 *.bcf
