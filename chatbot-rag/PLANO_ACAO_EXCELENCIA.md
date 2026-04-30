@@ -7,11 +7,32 @@
 - `[ ]` **Ação 1 — Reposicionar a contribuição com precisão cirúrgica**
 Redigir um parágrafo dedicado, na introdução e na conclusão, que articule em que medida o trabalho avança além da mera aplicação de RAG: o protocolo reprodutível para acervos legislativos em português é, em si, uma contribuição metodológica transferível. Nomear isso explicitamente como *design artifact* no sentido da Design Science Research.
 
-- `[ ]` **Ação 2 — Realizar busca sistemática de trabalhos concorrentes**
+- `[~]` **Ação 2 — Realizar busca sistemática de trabalhos concorrentes**
 Conduzir uma revisão sistemática em bases como ACL Anthology, IEEE Xplore e Scopus com os termos "RAG + parliament", "legislative chatbot", "retrieval-augmented + congressional discourse" para garantir que nenhum trabalho diretamente concorrente foi omitido. Documentar os resultados da busca em apêndice metodológico.
 
+  Nota de progresso:
+  - Decisão: iniciar a incorporação controlada das referências mais pertinentes identificadas na triagem.
+  - Arquivos alterados: `chatbot-rag.bib`.
+  - Referências incorporadas: Lewis et al. (2020), Rogiers et al. (2024), Colombo (2024), Hevner et al. (2004) e Peffers et al. (2007).
+  - Pendências: decidir em quais seções cada referência será citada e selecionar quais entradas irão para a tabela comparativa da Ação 3.
+
+  Nota de busca ampla adicional:
+  - Decisão: antes de fechar a Ação 2, foi realizada busca complementar por trabalhos acadêmicos ou técnico-institucionais fortemente relacionados ainda ausentes das referências.
+  - Referências de alta pertinência incorporadas ao `chatbot-rag.bib`: Chouhan e Gertz (2024), `LexDrafter`, por aplicar RAG à redação terminológica de documentos legislativos da União Europeia; Mosbach et al. (2025), `Parliamentary debates in The World Avatar`, por propor RAG híbrido com grafo de conhecimento para debates do Bundestag; Garrison et al. (2024), `Talk to the NDAA`, por avaliar RAG em legislação congressional dos EUA; Colombo et al. (2025), `LegisSearch`, por avaliar busca legislativa italiana com grafo, LLM, baseline BM25/TF-IDF e ablação; Akbar et al. (2025), sobre RAG para lacunas legais em cibersegurança de transportes, por usar corpus legislativo e métricas comparativas.
+  - Referências de pertinência média/adjacente incorporadas ao `chatbot-rag.bib`: Pipitone e Alami (2024), `LegalBench-RAG`, por avaliar recuperação em RAG jurídico; Dahl et al. (2024), `Large Legal Fictions`, por fundamentar riscos de alucinação e limites de LLMs no domínio jurídico.
+  - Decisão de triagem: não incorporar agora Citino (2024/2025), Gesnouin et al. (2024), Papantoniou et al. (2024/2025), Kring, Stürmer e Schwanholz (2025) e POPVOX Foundation (2026), pois são úteis para contextualização ou discussão institucional, mas menos centrais para sustentar a originalidade do artigo neste momento.
+  - Decisão de redistribuição: mover de Jong et al. (2024), Çöltekin et al. (2024) e Kuzman Pungeršek et al. (2026) para a Ação 6, pois são mais adequados à discussão sobre corpora parlamentares multilíngues e benchmarks computacionais do que à comparação direta de sistemas RAG legislativos.
+  - Pendências da Ação 2: selecionar quais das novas entradas irão para a tabela comparativa da Ação 3 e quais entrarão apenas na revisão de literatura; registrar a estratégia de busca em apêndice metodológico quando o manuscrito for revisado.
+
+  Referências sugeridas ainda não incorporadas ao `chatbot-rag.bib`:
+  - `[ ]` Citino (2024/2025), sobre IA generativa no processo legislativo italiano. Decisão atual: não incorporar agora; reavaliar apenas se a discussão institucional sobre processo legislativo italiano ganhar centralidade.
+  - `[ ]` Gesnouin et al. (2024), `LLaMandement`. Decisão atual: não incorporar agora; reavaliar apenas se a seção de trabalhos relacionados passar a cobrir sumarização legislativa como tarefa adjacente.
+  - `[ ]` Papantoniou et al. (2024/2025), dataset de decisões governamentais gregas com pipeline RAG. Decisão atual: não incorporar agora; verificar status editorial antes de eventual uso.
+  - `[ ]` Kring, Stürmer e Schwanholz (2025), `AskThePublic`. Decisão atual: não incorporar agora; reavaliar apenas para discussão de DSR e participação política digital.
+  - `[ ]` POPVOX Foundation (2026), texto institucional sobre RAG em casos legislativos. Decisão atual: não incorporar agora; fonte não acadêmica, usar no máximo como contextualização institucional.
+
 - `[ ]` **Ação 3 — Explicitar o diferencial frente aos trabalhos mais próximos**
-Criar uma tabela comparativa posicionando o artigo frente aos cinco ou seis trabalhos mais similares identificados na revisão (Khaliq et al., 2024; Martellote Viola et al., 2025; Blanco, 2025, 2026), com colunas para corpus, língua, pipeline, avaliação e disponibilidade pública dos artefatos. Isso torna a originalidade visível e verificável.
+Criar uma tabela comparativa posicionando o artigo frente aos cinco ou seis trabalhos mais similares identificados na revisão (Khaliq et al., 2024; Martellote Viola et al., 2025; Blanco, 2025, 2026; Matoshi et al., 2025; Sarnikar, 2025), com colunas para corpus, língua, pipeline, avaliação e disponibilidade pública dos artefatos. Isso torna a originalidade visível e verificável.
 
 ---
 
@@ -25,6 +46,14 @@ Incluir literatura adicional sobre frameworks de avaliação de RAG além do RAG
 
 - `[ ]` **Ação 6 — Reforçar a fundamentação sobre corpora parlamentares multilíngues**
 Incorporar literatura do campo ParlaCLARIN e de projetos como o ParlSpeech e o CorDis, que tratam especificamente de corpora de discursos parlamentares em perspectiva computacional, fortalecendo o diálogo entre o domínio técnico e o domínio legislativo com maior profundidade comparativa.
+
+  Referências deslocadas da triagem da Ação 2 para avaliação nesta ação:
+  - `[ ]` de Jong et al. (2024), `ParlaMint Ngram Viewer`, por tratar de busca diacrônica multilíngue em corpora de 26 parlamentos.
+  - `[ ]` Çöltekin et al. (2024), dataset multilíngue para identificação de poder e ideologia no Parlamento, por funcionar como referência de benchmark parlamentar computacional.
+  - `[ ]` Kuzman Pungeršek et al. (2026), `ParlaCAP`, por usar LLMs em corpus parlamentar multilíngue.
+
+- `[ ]` **Ação 6.1 — Revisar novas referências sobre RAG legislativo**
+Ler e sintetizar criticamente as referências recém-incluídas no `chatbot-rag.bib` sobre RAG, LLMs e recuperação em contextos parlamentares/legislativos/jurídicos: Matoshi et al. (2025), Sarnikar (2025), Rogiers et al. (2024), Chouhan e Gertz (2024), Garrison et al. (2024), Mosbach et al. (2025), Colombo (2024), Colombo et al. (2025), Akbar et al. (2025), Pipitone e Alami (2024) e Dahl et al. (2024). Avaliar se elas devem entrar na fundamentação teórica, na tabela comparativa de originalidade, na discussão de trabalhos relacionados ou apenas como reforço bibliográfico. Registrar, para cada uma, corpus analisado, país/instituição, desenho do pipeline, tipo de avaliação, limitações e diferença em relação ao presente artigo.
 
 - `[ ]` **Ação 7 — Adicionar discussão sobre limitações epistemológicas do LLM como juiz**
 Expandir a fundamentação teórica sobre a estratégia de *LLM as a Judge* para incluir seus vieses documentados na literatura: viés de posição, viés de verbosidade, viés de auto-preferência e sensibilidade à formulação da rubrica. Isso transformaria a discussão de um alerta metodológico em contribuição teórica ao debate.
