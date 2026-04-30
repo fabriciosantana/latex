@@ -5,7 +5,7 @@ Este fluxo combina MCPs, skills e arquivos locais para tornar a revisao de liter
 ## MCPs configurados
 
 - `openalex`: busca e metadados de publicacoes academicas via OpenAlex.
-- `github`: gestao do repositorio, issues, PRs e comentarios via GitHub MCP.
+- `github`: gestao do repositorio, issues, PRs e comentarios via GitHub MCP. Para o artigo `chatbot-rag`, as issues sao o backlog editorial operacional.
 
 O MCP `github` usa a variavel de ambiente `GITHUB_PAT_TOKEN`. Nunca registrar tokens no repositorio.
 
@@ -60,4 +60,4 @@ Usar, no minimo:
 5. Construir ou atualizar `literatura/TABELA_COMPARATIVA.md`.
 6. Revisar a secao de literatura no LaTeX, conectando literatura, lacuna e contribuicao.
 7. Atualizar o plano de acao e notas de revisao do artigo quando o estado geral mudar.
-8. Usar GitHub issues ou PRs para registrar etapas maiores, decisoes editoriais e revisoes.
+8. Usar GitHub Issues como backlog operacional e PRs para agrupar alteracoes revisaveis.

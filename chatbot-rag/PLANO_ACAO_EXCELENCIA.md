@@ -2,6 +2,26 @@
 
 ---
 
+## Status operacional
+
+O backlog editorial deste artigo foi migrado para GitHub Issues em 2026-04-30.
+Este arquivo permanece como registro histórico e mapa estratégico consolidado, mas as tarefas operacionais devem ser acompanhadas nas issues.
+
+### Backlog editorial no GitHub
+
+- [#2](https://github.com/fabriciosantana/latex/issues/2) — Definir revista-alvo e estratégia editorial.
+- [#3](https://github.com/fabriciosantana/latex/issues/3) — Criar tabela comparativa de trabalhos relacionados.
+- [#4](https://github.com/fabriciosantana/latex/issues/4) — Explicitar enquadramento DSR, objetivos verificáveis e proposições.
+- [#5](https://github.com/fabriciosantana/latex/issues/5) — Ampliar e qualificar revisão de literatura.
+- [#6](https://github.com/fabriciosantana/latex/issues/6) — Fortalecer avaliação empírica: recuperação, bateria, baseline e ablação.
+- [#7](https://github.com/fabriciosantana/latex/issues/7) — Reportar estatísticas, visualizações e divergências de avaliação.
+- [#8](https://github.com/fabriciosantana/latex/issues/8) — Aprofundar discussão, governança e limites de generalização.
+- [#9](https://github.com/fabriciosantana/latex/issues/9) — Adequar redação, resumo e forma à revista-alvo.
+- [#10](https://github.com/fabriciosantana/latex/issues/10) — Inserir declarações de integridade científica e ciência aberta.
+- [#11](https://github.com/fabriciosantana/latex/issues/11) — Preparar cover letter e sugestões de revisores.
+
+Ao retomar o trabalho, usar as issues como fonte operacional de verdade. Atualizar este arquivo apenas quando houver mudança estratégica relevante, consolidação do mapa editorial ou decisão de arquivamento.
+
 ## I. ORIGINALIDADE E CONTRIBUIÇÃO CIENTÍFICA
 
 - `[ ]` **Ação 1 — Reposicionar a contribuição com precisão cirúrgica**

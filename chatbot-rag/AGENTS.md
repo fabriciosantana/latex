@@ -4,7 +4,8 @@
 
 - Este diretorio contem um artigo academico em LaTeX sobre um chatbot RAG aplicado a discursos parlamentares do Senado Federal.
 - O manuscrito deve ser tratado como uma prova de conceito reprodutivel, com potencial de evolucao para submissao a periodico.
-- A agenda de evolucao esta em `PLANO_ACAO_EXCELENCIA.md`.
+- O backlog editorial operacional esta nas GitHub Issues do repositorio.
+- `PLANO_ACAO_EXCELENCIA.md` permanece como registro historico e mapa estrategico consolidado.
 - O historico de revisao e estado consolidado estao em `NOTAS_REVISAO.md`.
 
 ## Retomada de contexto
@@ -17,7 +18,7 @@ Antes de propor ou executar mudancas relevantes neste artigo, ler nesta ordem:
 4. As secoes diretamente afetadas em `sections/`
 5. `chatbot-rag.bib`, quando houver citacoes ou referencias
 
-Se o usuario pedir para continuar o plano sem indicar uma acao especifica, seguir a ordem recomendada em `PLANO_ACAO_EXCELENCIA.md`, comecando pela definicao da revista-alvo.
+Se o usuario pedir para continuar o plano sem indicar uma acao especifica, consultar primeiro as GitHub Issues abertas do artigo `chatbot-rag`. Se o acesso ao GitHub nao estiver disponivel, usar o indice de issues registrado em `PLANO_ACAO_EXCELENCIA.md`.
 
 Se houver ambiguidade sobre o objetivo editorial, perguntar diretamente se a prioridade e fechar a versao de entrega academica ou preparar uma versao para submissao a periodico.
 
@@ -50,8 +51,10 @@ Se houver ambiguidade sobre o objetivo editorial, perguntar diretamente se a pri
 
 ## Plano e acompanhamento
 
-- Quando uma acao de `PLANO_ACAO_EXCELENCIA.md` for iniciada, marcar como `[~]`.
-- Quando uma acao for concluida, marcar como `[x]` e registrar nota de progresso com arquivos alterados, verificacao e pendencias.
+- Usar GitHub Issues como backlog editorial operacional.
+- Quando uma acao for iniciada, registrar progresso na issue correspondente.
+- Quando uma acao for concluida, fechar a issue correspondente e registrar arquivos alterados, verificacao e pendencias.
+- Atualizar `PLANO_ACAO_EXCELENCIA.md` apenas quando houver mudanca estrategica relevante ou consolidacao do mapa editorial.
 - Atualizar `NOTAS_REVISAO.md` quando a mudanca afetar o estado geral do manuscrito.
 - Nao marcar uma acao como concluida apenas por ter sido discutida.
 

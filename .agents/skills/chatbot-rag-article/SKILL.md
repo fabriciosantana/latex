@@ -15,8 +15,9 @@ When working in `chatbot-rag/`, read:
 4. `main.tex`
 5. Affected files in `sections/`
 6. `chatbot-rag.bib` when citations or references are involved
+7. Open GitHub Issues for `chatbot-rag` when continuing the editorial backlog
 
-Use this skill together with `academic-latex-review` for manuscript-quality work and with `article-action-plan` when executing or updating `PLANO_ACAO_EXCELENCIA.md`.
+Use this skill together with `academic-latex-review` for manuscript-quality work and with `article-action-plan` when executing or updating the GitHub issue backlog.
 
 ## Manuscript Positioning
 
@@ -48,7 +49,8 @@ Use this skill together with `academic-latex-review` for manuscript-quality work
 
 ## Plan Updates
 
-- Use `[ ]`, `[~]`, and `[x]` consistently in `PLANO_ACAO_EXCELENCIA.md`.
-- Record progress notes with files changed, verification, limitations, and next steps.
+- Use GitHub Issues as the operational backlog for future editorial work.
+- Treat `PLANO_ACAO_EXCELENCIA.md` as historical record and strategic index unless the user asks to edit it directly.
+- Record progress notes in the corresponding issue with files changed, verification, limitations, and next steps.
 - Update `NOTAS_REVISAO.md` when the manuscript's overall state changes.
 - If an action is deferred because it needs new experiments, external data, journal selection, or human annotation, record the deferral as a decision rather than silently skipping it.

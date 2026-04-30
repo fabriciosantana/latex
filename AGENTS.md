@@ -102,3 +102,4 @@
 - Quando uma acao for concluida, registrar nota de progresso com arquivos alterados, verificacao e pendencias.
 - Atualizar notas de revisao locais quando a mudanca afetar o estado geral do manuscrito.
 - Nao marcar uma acao como concluida apenas por ter sido discutida; conclusao exige mudanca implementada, evidencia produzida ou decisao registrada.
+- Quando um artigo tiver migrado para GitHub Issues, usar as issues como backlog operacional e manter arquivos Markdown apenas como mapa estrategico, historico ou registro de decisoes.
