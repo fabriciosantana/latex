@@ -21,6 +21,15 @@
 - Procurar por `AGENTS.md`, notas de revisao, plano de acao, `main.tex`, secoes e arquivo `.bib` dentro do diretorio do artigo.
 - Se houver ambiguidade sobre o objetivo editorial, perguntar diretamente se a prioridade e fechar uma versao de entrega academica, preparar submissao a periodico ou desenvolver uma nova etapa de pesquisa.
 
+## Skills do repositorio
+
+- Skills versionadas ficam em `.agents/skills/`, que e o local de descoberta de skills de repositorio do Codex.
+- `AGENTS.md` define instrucoes persistentes do repositorio; skills definem workflows reutilizaveis para tarefas especificas.
+- Usar `.agents/skills/academic-latex-review` para revisao e fortalecimento de manuscritos LaTeX.
+- Usar `.agents/skills/article-action-plan` para continuar planos de acao, atualizar marcadores e registrar progresso.
+- Usar `.agents/skills/chatbot-rag-article` para tarefas especificas do artigo em `chatbot-rag/`.
+- O Codex tambem pode descobrir skills em escopos de usuario, administrador e sistema; as skills de repositorio devem permanecer em `.agents/skills/`.
+
 ## Principios de redacao academica
 
 - Tornar a contribuicao explicita, verificavel e proporcional as evidencias apresentadas.
