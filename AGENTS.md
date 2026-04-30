@@ -28,6 +28,9 @@
 - Usar `.agents/skills/academic-latex-review` para revisao e fortalecimento de manuscritos LaTeX.
 - Usar `.agents/skills/article-action-plan` para continuar planos de acao, atualizar marcadores e registrar progresso.
 - Usar `.agents/skills/chatbot-rag-article` para tarefas especificas do artigo em `chatbot-rag/`.
+- Usar `.agents/skills/pdf-final-review` para revisar visualmente PDFs compilados, incluindo layout, tabelas, figuras, notas e referencias.
+- Usar `.agents/skills/scientific-writing-clarity` para melhorar clareza, concisao, precisao e calibracao epistemica da prosa academica.
+- Usar `.agents/skills/literature-review-workflow` para planejar, executar e documentar buscas bibliograficas, triagem de trabalhos, tabelas comparativas e revisoes de literatura.
 - O Codex tambem pode descobrir skills em escopos de usuario, administrador e sistema; as skills de repositorio devem permanecer em `.agents/skills/`.
 
 ## Principios de redacao academica
