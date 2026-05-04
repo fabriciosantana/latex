@@ -1,15 +1,12 @@
 # Notas de revisao do artigo
 
-Este arquivo registra, de forma persistente no projeto, as principais sugestoes de melhoria para o artigo em `chatbot-rag/main.tex` e serve como quadro de acompanhamento do progresso.
+Este arquivo registra, de forma persistente no projeto, o estado consolidado da revisao do artigo em `chatbot-rag/main.tex`.
 
-Legenda de status:
-- `[x]` concluido
-- `[~]` em andamento
-- `[ ]` pendente
+O acompanhamento operacional das tarefas foi migrado para GitHub Issues. Este arquivo deve ser atualizado apenas quando houver mudanca relevante no diagnostico geral do manuscrito, no estado consolidado da revisao ou em decisoes editoriais importantes. Para backlog, progresso granular, conclusao de tarefas e proximas acoes, usar as issues.
 
 ## Diagnostico geral
 
-O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral, ameaças a validade e documentacao do prompt operacional do fluxo RAG. Na versao atual, os apendices foram omitidos do PDF e substituidos por notas de rodape para artefatos publicos no repositorio. As pendencias remanescentes sao de refinamento de apresentacao e consistencia final entre secoes, nao mais de ausencia de evidencia.
+O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral, ameacas a validade, documentacao do prompt operacional do fluxo RAG e distincao mais clara entre recuperacao, geracao, avaliacao por LLM juiz e inspecao humana/manual. A versao atual tambem inclui declaracoes de integridade cientifica e ciencia aberta, alem de discussao mais explicita sobre governanca, curadoria, atualizacao da base e limites de generalizacao institucional. Na versao atual, os apendices foram omitidos do PDF e substituidos por notas de rodape para artefatos publicos no repositorio. As pendencias remanescentes devem ser gerenciadas nas GitHub Issues.
 
 ## Progresso ja concluido
 
@@ -155,7 +152,14 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Incluir fontes institucionais recentes sobre discursos do Senado.
   Foram incorporados os Textos para Discussao n. 355 e n. 357, ambos da Consultoria Legislativa do Senado, para fortalecer a contextualizacao do corpus de discursos em plenario e contrastar estudos computacionais descritivos com a contribuicao aplicada deste trabalho em consulta RAG.
 
-## Proxima acao recomendada
+## Estado atual de acompanhamento
+
+- O backlog editorial operacional esta nas GitHub Issues.
+- `PLANO_ACAO_EXCELENCIA.md` permanece como mapa estrategico historico; suas acoes internas nao devem ser usadas como checklist ativo sem conversao para issue.
+- O PDF atual permanece em `out/main.pdf` e, apos a inclusao das declaracoes e da discussao de governanca, possui 26 paginas.
+- As proximas tarefas devem ser escolhidas a partir das issues abertas, considerando que novos experimentos completos foram deliberadamente adiados para uma rodada posterior.
+
+## Revisao visual e compilacao
 
 - `[x]` Fazer revisao visual final do PDF ja compilado, somente apos o fechamento academico do conteudo, para:
   - verificar quebras de pagina, tabelas longas remanescentes, notas de rodape e referencias;
@@ -164,14 +168,14 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   Revisao executada em `out/main.pdf`. A figura do pipeline foi conferida e permaneceu legivel. A bibliografia nao apresentou citacoes indefinidas no log. Foi identificado e corrigido um problema visual na Tabela 1, que estava quebrando entre paginas com a legenda separada do corpo; a tabela curta foi convertida de `longtable` para `table`/`tabular` em `sections/06-experimentos.tex`.
 
 - `[x]` Recompilar o PDF apos os ajustes visuais.
-  `latexmk -pdf main.tex` foi executado ate estabilizar as referencias. O PDF final permanece em `out/main.pdf`, com 20 paginas. O unico aviso residual observado no log e o fallback conhecido do `biblatex-abnt` para `brazilian-abnt-abnt.lbx`, sem indicacao de citacoes ou referencias indefinidas.
+  `latexmk -pdf main.tex` foi executado ate estabilizar as referencias. O PDF atual permanece em `out/main.pdf`, com 26 paginas. Os avisos residuais conhecidos sao o fallback do `biblatex-abnt` para `brazilian-abnt-abnt.lbx` e ocorrencias de `Underfull hbox` em celulas estreitas da tabela comparativa, sem indicacao de citacoes ou referencias indefinidas.
 
 ## Retomada sugerida
 
 Quando o trabalho for retomado, a sequencia mais eficiente agora parece ser:
 
-1. fazer apenas uma leitura humana final de ponta a ponta em `out/main.pdf`, sem reabrir revisao de conteudo salvo se aparecer erro material;
-2. conferir dados de capa, nomes dos autores, turma, disciplina, professor e URL do repositorio;
-3. conferir se os links externos das notas de rodape sao aceitaveis para a forma de entrega escolhida;
-4. se nada novo aparecer, congelar a versao para submissao/entrega;
-5. se houver qualquer ajuste pontual, recompilar com `latexmk -pdf main.tex` e revisar somente a pagina afetada.
+1. consultar as GitHub Issues abertas antes de escolher a proxima tarefa;
+2. manter a definicao de revista-alvo em aberto ate haver decisao editorial mais clara;
+3. evitar executar estatisticas e visualizacoes finais antes da rodada futura de novos experimentos;
+4. priorizar tarefas textuais/metodologicas que nao dependam da revista-alvo nem de nova coleta;
+5. apos qualquer ajuste em LaTeX, recompilar com `latexmk -pdf main.tex` e revisar o log.

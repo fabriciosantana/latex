@@ -7,6 +7,8 @@
 O backlog editorial deste artigo foi migrado para GitHub Issues em 2026-04-30.
 Este arquivo permanece como registro histórico e mapa estratégico consolidado, mas as tarefas operacionais devem ser acompanhadas nas issues.
 
+**Regra atual:** não usar os marcadores `[ ]`, `[~]` e `[x]` das ações abaixo como fonte operacional. Eles pertencem ao plano original e podem estar defasados em relação às issues já concluídas. Quando uma ação deste plano ainda parecer útil, criar ou atualizar uma GitHub Issue correspondente antes de executá-la.
+
 ### Backlog editorial no GitHub
 
 - [#2](https://github.com/fabriciosantana/latex/issues/2) — Definir revista-alvo e estratégia editorial.
@@ -21,6 +23,14 @@ Este arquivo permanece como registro histórico e mapa estratégico consolidado,
 - [#11](https://github.com/fabriciosantana/latex/issues/11) — Preparar cover letter e sugestões de revisores.
 
 Ao retomar o trabalho, usar as issues como fonte operacional de verdade. Atualizar este arquivo apenas quando houver mudança estratégica relevante, consolidação do mapa editorial ou decisão de arquivamento.
+
+## Como ler este plano agora
+
+- As seções abaixo preservam a agenda estratégica original de melhoria do artigo.
+- As ações não devem ser executadas diretamente a partir deste arquivo.
+- Se uma ação ainda for pertinente, converter a ação em issue ou relacioná-la a uma issue existente.
+- Quando houver divergência entre este arquivo e uma GitHub Issue, prevalece a issue.
+- `NOTAS_REVISAO.md` deve registrar apenas o estado consolidado do manuscrito, não o acompanhamento operacional de cada tarefa.
 
 ## I. ORIGINALIDADE E CONTRIBUIÇÃO CIENTÍFICA
 
@@ -228,32 +238,24 @@ Antes de propor ou executar mudanças, ler nesta ordem:
 
 ### 2. Estado atual presumido
 
-- O manuscrito já está em versão fechada para entrega acadêmica de curto prazo.
-- O PDF final atual está em `chatbot-rag/out/main.pdf`.
+- O manuscrito está em evolução editorial incremental, com backlog operacional nas GitHub Issues.
+- O PDF atual está em `chatbot-rag/out/main.pdf`.
 - A revisão visual final já foi feita; a Tabela 1 foi ajustada para não quebrar entre páginas.
 - O plano deste arquivo não é uma lista de correções urgentes para a entrega atual, mas uma agenda de evolução para submissão forte em periódico.
-- Todas as ações estão inicialmente marcadas como `[ ]` até que sejam efetivamente executadas, verificadas e documentadas.
+- As marcações antigas das ações abaixo são históricas e podem não refletir o estado atual das issues.
 
-### 3. Como atualizar os marcadores
+### 3. Como atualizar acompanhamento
 
-Usar a mesma legenda adotada em `NOTAS_REVISAO.md`:
+Não atualizar os marcadores das ações abaixo como se fossem checklist ativo. Para acompanhamento operacional:
 
-- `[ ]` pendente
-- `[~]` em andamento
-- `[x]` concluído
-
-Ao iniciar uma ação, marcar como `[~]`. Ao concluí-la, marcar como `[x]` e acrescentar, logo abaixo da ação, uma nota curta contendo:
-
-- o que foi alterado;
-- quais arquivos foram modificados;
-- como a alteração foi verificada;
-- se restaram limitações ou próximos passos.
-
-Não marcar uma ação como concluída apenas por ter sido discutida. A conclusão exige mudança implementada, evidência produzida ou decisão registrada.
+- criar ou atualizar uma GitHub Issue;
+- registrar progresso, verificação e conclusão na própria issue;
+- atualizar `NOTAS_REVISAO.md` apenas quando a mudança alterar o diagnóstico geral do manuscrito;
+- atualizar este plano somente quando houver mudança estratégica, arquivamento ou reestruturação do mapa editorial.
 
 ### 4. Ordem recomendada de execução
 
-Se o usuário pedir para "continuar o plano" sem indicar uma ação específica, seguir esta ordem:
+Se o usuário pedir para "continuar o plano" sem indicar uma ação específica, consultar primeiro as GitHub Issues abertas. A ordem abaixo é histórica e deve ser usada apenas como referência para decidir se vale criar novas issues:
 
 1. **Ação 31** — definir revista-alvo, pois ela orienta vocabulário, escopo, formato e profundidade das demais revisões.
 2. **Ação 3** — criar tabela comparativa de contribuição, por ser ganho alto e relativamente rápido.
@@ -273,7 +275,7 @@ Se o usuário pedir para "continuar o plano" sem indicar uma ação específica,
 
 ### 6. Como registrar decisões
 
-Ao final de cada bloco de trabalho, atualizar este arquivo e, se a mudança afetar o estado geral do manuscrito, também atualizar `NOTAS_REVISAO.md`.
+Ao final de cada bloco de trabalho, registrar decisões na GitHub Issue correspondente. Atualizar este arquivo apenas se a decisão alterar o mapa estratégico do artigo.
 
 Registrar decisões no formato:
 
