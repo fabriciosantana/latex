@@ -4,9 +4,39 @@ Este arquivo registra, de forma persistente no projeto, o estado consolidado da 
 
 O acompanhamento operacional das tarefas foi migrado para GitHub Issues. Este arquivo deve ser atualizado apenas quando houver mudanca relevante no diagnostico geral do manuscrito, no estado consolidado da revisao ou em decisoes editoriais importantes. Para backlog, progresso granular, conclusao de tarefas e proximas acoes, usar as issues.
 
+Este arquivo tambem incorpora, em forma consolidada, o conteudo ainda util do antigo `PLANO_ACAO_EXCELENCIA.md`, removido para evitar duplicidade entre arquivos de acompanhamento.
+
+## Relacao com GitHub Issues
+
+- As GitHub Issues sao a fonte operacional de verdade para backlog, progresso, conclusao e proximas tarefas.
+- Se uma ideia registrada neste arquivo precisar virar trabalho executavel, criar ou atualizar uma issue antes de implementar.
+- Quando houver divergencia entre este arquivo e uma issue, prevalece a issue.
+- Este arquivo deve preservar diagnostico, historico, decisoes editoriais e mapa estrategico de alto nivel.
+
 ## Diagnostico geral
 
 O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderencia ao problema proposto. O principal merito e tratar o sistema RAG como solucao sociotecnica e nao apenas como integracao superficial entre LLM e banco vetorial. A secao de experimentos amadureceu bastante: hoje o trabalho ja oferece base integra e rastreavel, estudos de caso qualitativos, tres rodadas automatizadas recentes com rubrica, discussao de estabilidade, analise manual amostral, ameacas a validade, documentacao do prompt operacional do fluxo RAG e distincao mais clara entre recuperacao, geracao, avaliacao por LLM juiz e inspecao humana/manual. A versao atual tambem inclui declaracoes de integridade cientifica e ciencia aberta, alem de discussao mais explicita sobre governanca, curadoria, atualizacao da base e limites de generalizacao institucional. Na versao atual, os apendices foram omitidos do PDF e substituidos por notas de rodape para artefatos publicos no repositorio. As pendencias remanescentes devem ser gerenciadas nas GitHub Issues.
+
+## Decisoes editoriais consolidadas
+
+- Manter o enquadramento como prova de conceito reprodutivel, nao como benchmark definitivo ou sistema pronto para uso institucional autonomo.
+- Tratar o artefato como solucao sociotecnica: pipeline, base documental, metadados, prompt, avaliacao, governanca e condicoes de uso.
+- Adiar novos experimentos completos para rodada propria, em vez de refazer estatisticas e visualizacoes sobre a bateria atual de 20 perguntas.
+- Manter a escolha de revista-alvo em aberto ate haver decisao editorial mais clara.
+- Usar as GitHub Issues como backlog editorial operacional.
+
+## Mapa estrategico consolidado
+
+As seguintes frentes vieram do antigo plano de excelencia e continuam uteis como mapa estrategico, mas nao como checklist ativo:
+
+- **Experimentos futuros:** ampliar bateria de perguntas, incluir baseline, ablação, metricas formais de recuperacao e anotacao humana independente. Esta frente esta registrada operacionalmente na issue #12.
+- **Analise quantitativa posterior:** reportar estatisticas, visualizacoes e divergencias de avaliacao somente depois da nova rodada experimental. Esta frente se relaciona a issue #7.
+- **Revista-alvo e forma editorial:** definir revista-alvo, adequar resumo, formato, guia de autores, cover letter e sugestoes de revisores quando houver decisao de submissao. Esta frente se relaciona as issues #2, #9 e #11.
+- **Literatura complementar:** se necessario, verificar status editorial de preprints, ampliar frameworks de avaliacao de RAG, aprofundar corpora parlamentares multilingues e vieses do LLM como juiz.
+- **Conclusao e discussao:** futuras issues podem separar contribuicoes por nivel de consolidacao, hierarquizar trabalhos futuros e revisar afirmacoes que excedam os dados.
+- **Ciencia aberta:** declaracoes basicas ja foram incorporadas; etapas futuras podem incluir DOI/OSF para protocolo, dados e artefatos, alem de eventual verificacao de similaridade antes de submissao.
+
+Referencias sugeridas no plano antigo e ainda nao incorporadas ao `.bib` devem ser reavaliadas apenas se ganharem pertinencia para nova versao: Citino (2024/2025), Gesnouin et al. (2024), Papantoniou et al. (2024/2025), Kring, Stürmer e Schwanholz (2025) e POPVOX Foundation (2026). A decisao anterior foi nao incorpora-las por serem adjacentes ou menos centrais para a originalidade atual do artigo.
 
 ## Progresso ja concluido
 
@@ -155,7 +185,7 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 ## Estado atual de acompanhamento
 
 - O backlog editorial operacional esta nas GitHub Issues.
-- `PLANO_ACAO_EXCELENCIA.md` permanece como mapa estrategico historico; suas acoes internas nao devem ser usadas como checklist ativo sem conversao para issue.
+- O antigo `PLANO_ACAO_EXCELENCIA.md` foi incorporado a este arquivo em forma consolidada e removido para evitar duplicidade.
 - O PDF atual permanece em `out/main.pdf` e, apos a inclusao das declaracoes e da discussao de governanca, possui 26 paginas.
 - As proximas tarefas devem ser escolhidas a partir das issues abertas, considerando que novos experimentos completos foram deliberadamente adiados para uma rodada posterior.
 
