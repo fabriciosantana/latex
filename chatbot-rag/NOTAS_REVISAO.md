@@ -47,6 +47,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   A secao passou a distinguir recuperacao, geracao, avaliacao por LLM juiz e inspecao humana/manual; tambem registrou que baseline, ablação, metricas formais de recuperacao e anotacao humana independente ficam para rodada futura.
 - `[x]` Inserir declaracoes de integridade cientifica e ciencia aberta.
   Foi adicionada uma secao propria antes das referencias, cobrindo conflitos de interesse, financiamento, disponibilidade de dados/codigo/artefatos, uso de IA generativa e consideracoes eticas. A redacao podera ser ajustada posteriormente ao guia da revista-alvo.
+- `[x]` Aprofundar discussao, governanca e limites de generalizacao.
+  Foram adicionados parágrafos em experimentos e conclusao para explicitar condicoes de transferencia do protocolo, responsabilidades de curadoria, atualizacao da base, tratamento de registros retificados/removidos e diferenca entre consulta assistida e prontidao operacional institucional.
 - `[x]` Realizar revisao editorial final com foco em rigor academico para publicacao.
   A revisao final ajustou formulacoes que poderiam superinterpretar os resultados, reforcou a contribuicao tecnico-metodologica e institucional, e substituiu termos excessivamente fortes por formulacoes mais defensaveis como evidencia inicial, criterios operacionais e viabilidade tecnica inicial.
 
