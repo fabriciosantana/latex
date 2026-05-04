@@ -27,7 +27,7 @@ Se houver ambiguidade sobre o objetivo editorial, perguntar diretamente se a pri
 - Preservar o enquadramento atual como prova de conceito reprodutivel.
 - Evitar transformar resultados preliminares em afirmacoes de validade ampla.
 - Tratar o sistema RAG como solucao sociotecnica, nao apenas como integracao entre LLM e banco vetorial.
-- Quando a revisao estiver orientada a periodico, considerar o enquadramento como Design Science Research e explicitar o artefato de design.
+- Quando a revisao estiver orientada a periodico, considerar o enquadramento como *Design Science Research* e explicitar o artefato de design.
 - Posicionar a contribuicao como protocolo reprodutivel para acervos legislativos em portugues, quando isso estiver sustentado pelo texto.
 - Diferenciar o que e especifico do corpus de discursos do Senado Federal e o que pode ser transferido para outros acervos legislativos.
 - Ao comparar com outros trabalhos, destacar corpus, idioma, jurisdicao, pipeline, avaliacao, abertura dos artefatos e diferenca em relacao ao protocolo deste artigo.

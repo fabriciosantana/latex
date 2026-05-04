@@ -39,6 +39,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 - `[x]` Reforcar o contraste em trabalhos relacionados: literatura de discurso parlamentar analisa o corpus, literatura de RAG fornece a base tecnica, e este artigo conecta ambas por meio de uma prova de conceito avaliada.
 - `[x]` Criar tabela comparativa inicial dos trabalhos relacionados mais proximos, com triagem das novas entradas adicionadas ao `.bib`.
   A tabela foi inserida em `sections/03-fundamentacao.tex`, e os documentos de apoio foram registrados em `literatura/TRIAGEM.md` e `literatura/TABELA_COMPARATIVA.md`.
+- `[x]` Explicitar o enquadramento metodologico como *Design Science Research* proporcional a uma prova de conceito.
+  Foram citadas as referencias de Hevner et al. e Peffers et al., delimitado o artefato de design e conectados criterios de verificacao, demonstracao experimental e limites de validade institucional.
 - `[x]` Realizar revisao editorial final com foco em rigor academico para publicacao.
   A revisao final ajustou formulacoes que poderiam superinterpretar os resultados, reforcou a contribuicao tecnico-metodologica e institucional, e substituiu termos excessivamente fortes por formulacoes mais defensaveis como evidencia inicial, criterios operacionais e viabilidade tecnica inicial.
 

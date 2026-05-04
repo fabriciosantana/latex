@@ -25,7 +25,7 @@ Ao retomar o trabalho, usar as issues como fonte operacional de verdade. Atualiz
 ## I. ORIGINALIDADE E CONTRIBUIÇÃO CIENTÍFICA
 
 - `[ ]` **Ação 1 — Reposicionar a contribuição com precisão cirúrgica**
-Redigir um parágrafo dedicado, na introdução e na conclusão, que articule em que medida o trabalho avança além da mera aplicação de RAG: o protocolo reprodutível para acervos legislativos em português é, em si, uma contribuição metodológica transferível. Nomear isso explicitamente como *design artifact* no sentido da Design Science Research.
+Redigir um parágrafo dedicado, na introdução e na conclusão, que articule em que medida o trabalho avança além da mera aplicação de RAG: o protocolo reprodutível para acervos legislativos em português é, em si, uma contribuição metodológica transferível. Nomear isso explicitamente como *design artifact* no sentido da *Design Science Research*.
 
 - `[~]` **Ação 2 — Realizar busca sistemática de trabalhos concorrentes**
 Conduzir uma revisão sistemática em bases como ACL Anthology, IEEE Xplore e Scopus com os termos "RAG + parliament", "legislative chatbot", "retrieval-augmented + congressional discourse" para garantir que nenhum trabalho diretamente concorrente foi omitido. Documentar os resultados da busca em apêndice metodológico.
@@ -83,13 +83,13 @@ Expandir a fundamentação teórica sobre a estratégia de *LLM as a Judge* para
 ## III. PROBLEMA, HIPÓTESES E OBJETIVOS
 
 - `[ ]` **Ação 8 — Declarar o enquadramento epistemológico e metodológico do trabalho**
-Adicionar uma subseção (sugerida entre a justificativa e a fundamentação teórica) declarando explicitamente que o trabalho se enquadra na Design Science Research (Hevner et al., 2004; Peffers et al., 2007), com seus seis passos canônicos mapeados para as seções do artigo. Isso responde a uma das exigências mais frequentes de revisores em revistas de sistemas de informação e administração pública digital.
+Adicionar uma subseção (sugerida entre a justificativa e a fundamentação teórica) declarando explicitamente que o trabalho se enquadra na *Design Science Research* (Hevner et al., 2004; Peffers et al., 2007), com seus seis passos canônicos mapeados para as seções do artigo. Isso responde a uma das exigências mais frequentes de revisores em revistas de sistemas de informação e administração pública digital.
 
 - `[ ]` **Ação 9 — Reformular os objetivos específicos com indicadores de verificação**
 Para cada um dos quatro objetivos específicos, acrescentar um critério mensurável de êxito. Por exemplo: o objetivo de "avaliar empiricamente a qualidade" deve especificar qual patamar de desempenho na rubrica seria considerado suficiente para validar a viabilidade da prova de conceito, transformando-o em proposição verificável.
 
 - `[ ]` **Ação 10 — Formular proposições de pesquisa em substituição a hipóteses**
-Como o trabalho é de natureza construtiva e não experimental no sentido estrito, substituir a ausência de hipóteses por proposições de pesquisa formais — estrutura comum em Design Science Research — do tipo: *"P1: Um pipeline RAG com enriquecimento de chunks por metadados legislativos produz respostas com maior rastreabilidade do que sistemas RAG sem esse enriquecimento."* Isso oferece ao revisor um alvo avaliativo claro.
+Como o trabalho é de natureza construtiva e não experimental no sentido estrito, substituir a ausência de hipóteses por proposições de pesquisa formais — estrutura comum em *Design Science Research* — do tipo: *"P1: Um pipeline RAG com enriquecimento de chunks por metadados legislativos produz respostas com maior rastreabilidade do que sistemas RAG sem esse enriquecimento."* Isso oferece ao revisor um alvo avaliativo claro.
 
 ---
 
@@ -257,7 +257,7 @@ Se o usuário pedir para "continuar o plano" sem indicar uma ação específica,
 
 1. **Ação 31** — definir revista-alvo, pois ela orienta vocabulário, escopo, formato e profundidade das demais revisões.
 2. **Ação 3** — criar tabela comparativa de contribuição, por ser ganho alto e relativamente rápido.
-3. **Ações 8, 9 e 10** — explicitar Design Science Research, critérios verificáveis e proposições.
+3. **Ações 8, 9 e 10** — explicitar *Design Science Research*, critérios verificáveis e proposições.
 4. **Ações 16 e 17** — extrair estatísticas e visualização dos dados já existentes, sem exigir novo experimento.
 5. **Ação 18** — aprofundar a divergência entre LLM juiz e avaliação humana.
 6. **Ações 27 e 29** — inserir declarações formais de integridade científica.

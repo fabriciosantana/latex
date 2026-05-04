@@ -1,5 +1,11 @@
 \section{Proposta de solução}
 
+\subsection{Enquadramento metodológico}
+
+O trabalho adota uma orientação construtiva e aplicada, compatível com a \textit{Design Science Research} em sistemas de informação. Nessa perspectiva, a contribuição científica pode decorrer da construção, demonstração e avaliação de um artefato destinado a enfrentar um problema relevante em seu contexto de uso \parencite{hevnerEtAl2004designScience}. No presente estudo, o artefato de design não se restringe à interface conversacional: ele compreende o \textit{pipeline} de preparação documental, a base vetorial enriquecida por metadados legislativos, o fluxo RAG configurado no Open WebUI, o \textit{prompt} operacional, os \textit{scripts} de ingestão e avaliação e os artefatos que permitem auditoria das execuções.
+
+O desenho do estudo também dialoga com a metodologia de \textit{Design Science Research} proposta por \textcite{peffersEtAl2007dsrm}. A identificação do problema aparece na caracterização do acesso qualificado a discursos parlamentares; os objetivos de solução são explicitados na introdução e nos critérios de sucesso; o desenho e desenvolvimento do artefato são descritos nesta seção; a demonstração e a avaliação são apresentadas nos experimentos; e a comunicação ocorre por meio deste manuscrito e dos artefatos públicos do projeto. Essa correspondência deve ser entendida como enquadramento metodológico proporcional a uma prova de conceito reprodutível, e não como validação institucional definitiva da solução.
+
 \subsection{Arquitetura do chatbot legislativo}
 
 A solução proposta concretiza-se em um \textit{chatbot} legislativo que utiliza a abordagem RAG para responder a consultas sobre discursos da 56\textordfeminine{} Legislatura do Senado Federal. A arquitetura compreende cinco componentes articulados: uma instância do Open WebUI, utilizada como interface de interação e orquestração do fluxo RAG; \textit{scripts} em Python empregados na extração, preparação, importação e avaliação do conteúdo documental; o ChromaDB, utilizado como banco vetorial acessado por HTTP; o Ollama, mantido como alternativa para integração com modelos locais; e a API da OpenAI, utilizada na configuração experimental validada para geração de \textit{embeddings} e respostas.
