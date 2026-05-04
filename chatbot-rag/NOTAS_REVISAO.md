@@ -29,7 +29,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
 
 As seguintes frentes vieram do antigo plano de excelencia e continuam uteis como mapa estrategico, mas nao como checklist ativo:
 
-- **Experimentos futuros:** ampliar bateria de perguntas, incluir baseline, ablação, metricas formais de recuperacao e anotacao humana independente. Esta frente esta registrada operacionalmente na issue #12.
+- **Experimentos futuros:** ampliar bateria de perguntas, incluir baseline, ablação, metricas formais de recuperacao e anotacao humana independente. Esta frente esta registrada operacionalmente na issue #12, agora usada como guarda-chuva da nova rodada experimental, com desdobramentos nas issues #13 a #18.
+- O plano detalhado da rodada futura de experimentos foi registrado em `experimentos/PLANO_MELHORIA_EXPERIMENTOS.md`, com desenho proposto para gold standard, baselines, ablacoes, anotacao humana, avaliacao por LLM juiz, analise estatistica e reproducibilidade.
 - **Analise quantitativa posterior:** reportar estatisticas, visualizacoes e divergencias de avaliacao somente depois da nova rodada experimental. Esta frente se relaciona a issue #7.
 - **Revista-alvo e forma editorial:** definir revista-alvo, adequar resumo, formato, guia de autores, cover letter e sugestoes de revisores quando houver decisao de submissao. Esta frente se relaciona as issues #2, #9 e #11.
 - **Literatura complementar:** se necessario, verificar status editorial de preprints, ampliar frameworks de avaliacao de RAG, aprofundar corpora parlamentares multilingues e vieses do LLM como juiz.
