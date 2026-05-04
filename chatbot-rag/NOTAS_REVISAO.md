@@ -43,6 +43,8 @@ O manuscrito esta bem estruturado, bem escrito em tom academico e com boa aderen
   Foram citadas as referencias de Hevner et al. e Peffers et al., delimitado o artefato de design e conectados criterios de verificacao, demonstracao experimental e limites de validade institucional.
 - `[x]` Reforcar a fundamentacao sobre riscos e avaliacao em dominios juridico-legislativos.
   Foram incorporadas referencias sobre alucinacao juridica, benchmark de RAG juridico e uso de grafos/LLMs em sistemas legislativos, sem ampliar indevidamente o escopo empirico do artigo.
+- `[x]` Revisar metodologicamente a secao de experimentos sem executar nova rodada experimental.
+  A secao passou a distinguir recuperacao, geracao, avaliacao por LLM juiz e inspecao humana/manual; tambem registrou que baseline, ablação, metricas formais de recuperacao e anotacao humana independente ficam para rodada futura.
 - `[x]` Realizar revisao editorial final com foco em rigor academico para publicacao.
   A revisao final ajustou formulacoes que poderiam superinterpretar os resultados, reforcou a contribuicao tecnico-metodologica e institucional, e substituiu termos excessivamente fortes por formulacoes mais defensaveis como evidencia inicial, criterios operacionais e viabilidade tecnica inicial.
 
